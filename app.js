@@ -12,7 +12,6 @@ const users = require('./routes/users');
 const device = require('./routes/devices');
 const assign = require('./routes/assign');
 const register = require('./routes/register');
-const multer = require('multer');
 const config = require('./config/database');
 const User = require('./models/user');
 
@@ -34,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/register',register);
 //user update middleware
-app.use('/users', users);
+
 
 //Token authentication, with decoded token
 app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, res, next) {
@@ -72,6 +71,7 @@ app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, 
 
 app.use('/auth/device', device);
 app.use('/auth/assign', assign);
+app.use('/auth/users', users);
 
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
@@ -79,11 +79,11 @@ app.use(function (req, res, next) {
     next(err);
 });
 
-
-// error handler
-app.use(function (err, req, res, next) {
+app.use(function(err, req, res, next) {
     // set locals, only providing error in development
     res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
+
     // render the error page
     res.status(err.status || 500);
     res.render('error');
@@ -102,5 +102,5 @@ getToken = function (headers) {
     }
 };
 
-app.listen(8080, "localhost");
+app.listen(8080, "192.168.2.56");
 module.exports = app;

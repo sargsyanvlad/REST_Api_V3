@@ -8,7 +8,7 @@ var router = express.Router();
 var User = require("../models/user");
 
 //receive post request and Signup a User
-router.post('/singup', function(req, res) {
+router.post('/signup', function(req, res) {
     if (!req.body.username || !req.body.password || !req.body.role) {
         res.json({success: false, msg: 'Please pass username, password and role.'});
     } else {

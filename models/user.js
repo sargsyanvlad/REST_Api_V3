@@ -15,10 +15,11 @@ var UserSchema = new Schema({
         required: true
     },
     role: {
-        default:'user',
+        default: 'user',
         type: String, //we can consider using array of strings as in case user has several roles at the same time
-        requierd:true
+        requierd: true
     },
+
     devices: [
         {
             type: Schema.Types.ObjectId,
@@ -26,12 +27,13 @@ var UserSchema = new Schema({
             required: false
         }
     ],
-    allowedActions:[
-        {
-            type:Schema.Types.ObjectId,
-            ref:"Permissions"
-        }
-    ]
+    allowedActions: [{
+        type: Array,
+        ref: "Permissions",
+        devices: [{
+            type: Schema.Types.ObjectId,
+        }]
+    }]
 
 });
 
