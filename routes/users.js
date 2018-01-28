@@ -14,10 +14,7 @@ router.put('/:userId', function (req, res) {
             username: req.body.username,
             role: req.body.role
         }, {new: true}, function (err) {
-            if (err) throw err;
-            if (!user) {
-                res.send(401, {success: false, msg: 'Cant find User'});
-            }
+            if (err) res.send(400,{msg:"Passed User Id is Wrong"})
             else res.send(200, {success: true, msg: 'Success'});
         });
     } else {
@@ -30,10 +27,8 @@ router.delete('/:userId', function (req, res) {
     let user = res.locals.users;
     if (user.role === 'admin') {
         User.findByIdAndRemove(req.params.userId, function (err) {
-            if (err) throw err;
-            if (!user) {
-                res.json(401, {success: false, msg: 'Cant find User'});
-            }
+            if(err) res.send(400,{msg:"Passed User Id is Wrong"});
+
             else res.json(200, {success: true, msg: 'Success'});
         });
     } else {

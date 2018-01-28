@@ -40,7 +40,7 @@ var UserSchema = new Schema({
             ref: "Device"
         }
     ],
-    devices: [
+    devices: [//we can delete this array because above in permissions arrays(start,restart,stop) we can see is any devicees assigned or not
         {
             type: Schema.Types.ObjectId,
             ref: "Device",
