@@ -8,7 +8,7 @@ const Device = require("../models/device");
 
 
 
-router.post('/:deviceId/:action', function(req, res) {
+router.post('/:deviceId/:action',(req, res) => {
     let user = res.locals.users;
     let action = req.params.action;
     let deviceId = req.params.deviceId;
@@ -21,11 +21,11 @@ router.post('/:deviceId/:action', function(req, res) {
                     }).exec(function(error, data){
                         if(error) {
                             res.send(error)
-                        } if (user.restart == deviceId ){res.send(user.restart) }
-                        else {res.send('You are not assigned to this action')}
+                        } if (user.restart == deviceId ) res.send(200,{msg:"Success"});
+                        else res.send(403,{msg:'You are not assigned to this action'});
                     })
                 } else {
-                    return res.status(401).json({message: 'Device Not found'});
+                    return res.send(401,{message: 'Device Not found'});
                 }
             })
     }else if(action === 'start'){
@@ -38,10 +38,10 @@ router.post('/:deviceId/:action', function(req, res) {
                         if(error) {
                             res.send(error)
                         } if (user.start == deviceId ){res.send(user.stop) }
-                        else {res.send('You are not assigned to this action')}
+                        else res.send(403,{msg:'You are not assigned to this action'});
                     })
                 } else {
-                    return res.status(401).json({message: 'Device Not found'});
+                    return res.send(401,{message: 'Device Not found'});
                 }
             })
     }
@@ -55,13 +55,13 @@ router.post('/:deviceId/:action', function(req, res) {
                         if(error) {
                             res.send(error)
                         } if (user.stop == deviceId ){res.send(user.stop) }
-                        else {res.send('You are not assigned to this action')}
+                        else res.send(403,{msg:'You are not assigned to this action'});
                     })
                 } else {
-                    return res.status(401).json({message: 'Device Not found'});
+                    return res.send(401,{message: 'Device Not found'});
                 }
             })
-    } else res.send(403,{msg:"please pass right action"});
+    } else res.send(400,{msg:"please pass right action"});
 });
 
 module.exports = router;

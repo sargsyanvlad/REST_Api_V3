@@ -21,9 +21,9 @@ router.post('/',  (req, res) => {
             if (err) {
                 return res.json({success: false, msg: 'Save Device failed.'})
             }
-            res.json({success: true, msg: 'Successful created new Device.'})
+            res.json(201,{success: true, msg: 'Successful created new Device.'})
         });
-    } else res.send(401, {success: false, msg: "You are not admin"})
+    } else res.send(403, {success: false, msg: "You are not admin"})
 
 })
 
@@ -36,7 +36,7 @@ router.put("/:deviceId", (req, res) => {
             if (err) res.send(err);
             else res.json(200, {success: true, msg: 'Success'});
         });
-    } else res.send(401, {success: false, msg: "You are not admin"})
+    } else res.send(403, {success: false, msg: "You are not admin"})
 })
 
 ////receive delete request for Delete Device
@@ -47,7 +47,7 @@ router.delete("/:deviceId", (req, res) => {
             if (err) throw err;
             else res.json(200, {success: true, msg: 'Success'})
         });
-    }
+    } else res.send(403, {success: false, msg: "You are not admin"})
 })
 
 module.exports = router;

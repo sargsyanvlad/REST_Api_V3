@@ -19,12 +19,11 @@ router.post('/:userId/:deviceId/:allowedAction', (req, res) => {
                 if (loggeduser.role === 'admin') {
                     if (allowedAction === 'start') {
                         User.findByIdAndUpdate(userId, {$push: {start: deviceId}}, {new: true}, function (err) {
-                            if (err) throw err;
-
+                            if (err) throw err; //if error happened throw this error
                         });
                         Device.findByIdAndUpdate(deviceId, {$push: {user: userId}}, {new: true}, function (err) {
                             if (err) throw err;
-                            else res.json(200, {success: true, msg: 'Success'});
+                            else res.json(200,{success: true, msg: 'Success'});
                         });
                     }
                     else if (allowedAction === 'stop') {
@@ -46,12 +45,12 @@ router.post('/:userId/:deviceId/:allowedAction', (req, res) => {
                             else res.json(200, {success: true, msg: 'Success'});
                         });
                     }
-                    else (res.send('Please pass Action'));
+                    else res.send(400,{msg:"please pass action"});
                 }
-                else (res.send('You are not Admin'));
+                else res.send(403, {success: false, msg: "You are not admin"});
 
             } else {
-                return res.status(401).json({message: 'User Not found'});
+                return res.send(401, {success: false, msg: "Cant Find User"});
             }
 
         })
