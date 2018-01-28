@@ -11,7 +11,8 @@ const passport = require('passport');
 const users = require('./routes/users');
 const device = require('./routes/devices');
 const assign = require('./routes/assign');
-const register = require('./routes/register');
+const login = require('./routes/login');
+const action = require('./routes/action');
 const config = require('./config/database');
 const User = require('./models/user');
 
@@ -27,15 +28,15 @@ app.set('view engine', 'jade');
 app.use(passport.initialize());
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/register',register);
-//user update middleware
+//user register, signin middlware
+app.use('/login', login);
 
 
-//Token authentication, with decoded token
+// JWT Token authentication, with decoded token
 app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, res, next) {
     var token = getToken(req.headers);
     if (token) {
@@ -46,9 +47,7 @@ app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, 
             function (err, user) {
                 if (err) {
                     res.status(202).json({success: false, msg: "you are not authorized"});
-                    // return res.json(202, );
                 }
-
                 if (user) {
                     res.locals.users = user;
                     next();
@@ -64,31 +63,35 @@ app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, 
 
 
     } else {
-        return res.status(204).json({success: false, msg: "unautorized"})
+        next();
+        res.status(204).json({success: false, msg: "unautorized"})
+
     }
 });
 
-
+//users delete, update
+app.use('/auth/users',   users);
 app.use('/auth/device', device);
 app.use('/auth/assign', assign);
-app.use('/auth/users', users);
+app.use('/auth/action', action);
 
+//error hanelers
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
 });
 
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
     // set locals, only providing error in development
     res.locals.message = err.message;
     res.locals.error = req.app.get('env') === 'development' ? err : {};
-
     // render the error page
     res.status(err.status || 500);
     res.render('error');
 });
 
+//getToken function for getting token from req authorization headers
 getToken = function (headers) {
     if (headers && headers.authorization) {
         var parted = headers.authorization.split(' ');

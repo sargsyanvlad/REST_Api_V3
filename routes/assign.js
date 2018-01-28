@@ -1,29 +1,40 @@
-var mongoose = require('mongoose');
-var passport = require('passport');
-var config = require('../config/database');
+const passport = require('passport');
 require('../config/passport')(passport);
-var express = require('express');
-var jwt = require('jsonwebtoken');
-var router = express.Router();
-var User = require("../models/user");
+const express = require('express');
+const router = express.Router();
+const User = require("../models/user");
 
-router.post('/:user/:id/:deviceId/:allowedActions', function (req, res) {
+
+//assignining Device  and permission to User
+router.post('/:userId/:deviceId/:allowedAction', (req, res) => {
     let user = res.locals.users;
-    if (user.role === 'admin'){
-
-    }
-    User.findOne(user.id).populate('allowedActions').exec(function (err, user) {
-        if (err) return (err);
-        console.log(User);
-
-    });
-    // updateUser.update()
-    newDevice.save(function (err) {
-        if (err) {
-            return res.json({success: false, msg: 'Save Device failed.'});
+    var userId = req.params.userId;
+    var deviceId = req.params.deviceId;
+    var allowedAction = req.params.allowedAction;
+    if (user.role === 'admin') {
+        if (allowedAction === 'start') {
+            User.findByIdAndUpdate(userId, {$push: {start: deviceId}}, {new: true}, function (err) {
+                if (err) throw err;
+                else res.json(200, {success: true, msg: 'Success'});
+            });
         }
-        res.json({success: true, msg: 'Successful created new Device.'});
-    });
+        else if (allowedAction === 'stop') {
+            User.findByIdAndUpdate(userId, {$push: {stop: deviceId}}, {new: true}, function (err) {
+                if (err) throw err;
+                else res.json(200, {success: true, msg: 'Success'});
+            });
+        }
+        else if (allowedAction === 'restart') {
+            User.findByIdAndUpdate(userId, {$push: {restart: deviceId}}, {new: true}, function (err) {
+                if (err) throw err;
+                else res.json(200, {success: true, msg: 'Success'});
+            });
+        }
+        else (res.send('Please pass Action'));
+    }
+    else (res.send('You are not Admin'));
+
+
 });
 
 module.exports = router;

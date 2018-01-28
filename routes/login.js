@@ -1,14 +1,35 @@
-var mongoose = require('mongoose');
-var passport = require('passport');
-var config = require('../config/database');
+const passport = require('passport');
+const config = require('../config/database');
 require('../config/passport')(passport);
-var express = require('express');
-var jwt = require('jsonwebtoken');
-var router = express.Router();
-var User = require("../models/user");
+const express = require('express');
+const jwt = require('jsonwebtoken');
+const router = express.Router();
+const User = require("../models/user");
 
-//receive put request and Signin a User
-router.post('/signin', function(req, res) {
+
+//receive post request and Signup a User
+router.post('/signup', (req, res) => {
+    if (!req.body.username || !req.body.password || !req.body.role) {
+        res.json({success: false, msg: 'Please pass username, password and role.'});
+    } else {
+        var newUser = new User({
+            username: req.body.username,
+            password: req.body.password,
+            role:     req.body.role
+        });
+        // save  user
+        newUser.save(function(err) {
+            if (err) {
+                console.log(err);
+                return res.json({success: false, msg: 'Username already exists.'});
+            }
+            res.json({success: true, msg: 'Successful created new user.', role:req.body.role});
+        });
+    }
+});
+
+//receive post request and Login a User
+router.post('/', (req, res) => {
     User.findOne({
         username: req.body.username
     }, function(err, user) {

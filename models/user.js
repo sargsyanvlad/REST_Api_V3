@@ -20,20 +20,40 @@ var UserSchema = new Schema({
         requierd: true
     },
 
+    start: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Device"
+        }
+    ],
+
+    stop: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Device"
+        }
+    ],
+
+    restart: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Device"
+        }
+    ],
+    permissions: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Permissions",
+            required: false
+        }
+    ],
     devices: [
         {
             type: Schema.Types.ObjectId,
             ref: "Device",
             required: false
         }
-    ],
-    allowedActions: [{
-        type: Array,
-        ref: "Permissions",
-        devices: [{
-            type: Schema.Types.ObjectId,
-        }]
-    }]
+    ]
 
 });
 
