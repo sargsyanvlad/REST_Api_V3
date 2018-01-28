@@ -40,13 +40,6 @@ var UserSchema = new Schema({
             ref: "Device"
         }
     ],
-    // permissions: [
-    //     {
-    //         type: Schema.Types.ObjectId,
-    //         ref: "Permissions",
-    //         required: false
-    //     }
-    // ],
     devices: [
         {
             type: Schema.Types.ObjectId,

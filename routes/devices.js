@@ -19,9 +19,9 @@ router.post('/',  (req, res) => {
         });
         newDevice.save(function (err) {
             if (err) {
-                return res.json({success: false, msg: 'Save Device failed.'});
+                return res.json({success: false, msg: 'Save Device failed.'})
             }
-            res.json({success: true, msg: 'Successful created new Device.'});
+            res.json({success: true, msg: 'Successful created new Device.'})
         });
     } else res.send(401, {success: false, msg: "You are not admin"})
 
@@ -45,7 +45,7 @@ router.delete("/:deviceId", (req, res) => {
     if (user.role === 'admin') {
         Device.findByIdAndRemove(req.params.deviceId, function (err) {
             if (err) throw err;
-            else res.json(200, {success: true, msg: 'Success'});
+            else res.json(200, {success: true, msg: 'Success'})
         });
     }
 })
