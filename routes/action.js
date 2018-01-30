@@ -1,5 +1,3 @@
-// const passport = require('passport');
-// require('../config/passport')(passport);
 const express = require('express');
 const router = express.Router();
 const User = require("../models/user");
@@ -7,7 +5,7 @@ const Device = require("../models/device");
 
 
 
-//modified code, im deleted code duplication
+//modified code, i'm deleted code duplication
 router.post('/:deviceId/:action',(req, res) => {
     let user = res.locals.users;
     let action = req.params.action;

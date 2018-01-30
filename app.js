@@ -41,27 +41,28 @@ app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, 
     var token = getToken(req.headers);
     if (token) {
         var decoded = jwt.decode(token, config.secret);
+        var current_time = Date.now().valueOf() / 1000;
+        if (current_time > decoded.exp) {       //check if expired  out or not
+            return res.send(401,{msg:'Authorization timed out'});
+        } else {
+            User.findOne({username: decoded.username},
+                function (err, user) {
+                    if (err) {
+                        res.send(202,{success: false, msg: "you are not authorized"});
+                    }
+                    if (user) {
+                        res.locals.users = user;
+                        next();
+                    } else {
+                        return res.send(401,{
+                            'status': 401,
+                            'code': 2,
+                            'message': 'User Not found'
+                        });
+                    }
 
-        console.log(decoded);
-        User.findOne({username: decoded.username},
-            function (err, user) {
-                if (err) {
-                    res.status(202).json({success: false, msg: "you are not authorized"});
-                }
-                if (user) {
-                    res.locals.users = user;
-                    next();
-                } else {
-                    return res.status(401).json({
-                        'status': 401,
-                        'code': 2,
-                        'message': 'User Not found'
-                    });
-                }
-
-            });
-
-
+                });
+        }
     } else {
         next();
         res.status(204).json({success: false, msg: "unautorized"})
@@ -70,7 +71,7 @@ app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, 
 });
 
 //users delete, update
-app.use('/auth/users',   users);
+app.use('/auth/users', users);
 app.use('/auth/device', device);
 app.use('/auth/assign', assign);
 app.use('/auth/action', action);
