@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d82bf431-94a9-4fbf-b912-818bbe91854e" name="Default" comment="Adding permissions scheme">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/action.js" afterPath="$PROJECT_DIR$/routes/action.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -311,12 +310,12 @@
       <workItem from="1516919406796" duration="2053000" />
       <workItem from="1516949708659" duration="812000" />
       <workItem from="1516950531194" duration="25703000" />
-      <workItem from="1517135269224" duration="16805000" />
+      <workItem from="1517135269224" duration="16997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51582000" />
+    <option name="totallyTimeSpent" value="51774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-28" width="1920" height="1108" extended-state="0" />
