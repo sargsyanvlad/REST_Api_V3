@@ -1,10 +1,9 @@
-const passport = require('passport');
-require('../config/passport')(passport);
 const express = require('express');
 const router = express.Router();
 const User = require("../models/user");
 const Device = require("../models/device");
-
+const passport = require('passport');
+require('../config/passport')(passport);
 
 //assignining Device  and permission to User
 router.post('/:userId/:deviceId/:allowedAction', (req, res) => {
@@ -17,35 +16,16 @@ router.post('/:userId/:deviceId/:allowedAction', (req, res) => {
         function (err, user) {
             if (user) {
                 if (loggeduser.role === 'admin') {
-                    if (allowedAction === 'start') {
-                        User.findByIdAndUpdate(userId, {$push: {start: deviceId}}, {new: true}, function (err) {
+                    if (allowedAction === 'start' || 'stop' || 'restart') {
+                        User.findByIdAndUpdate(userId, {$push: {user: [allowedAction] = deviceId}}, {new: true}, function (err) {
                             if (err) throw err; //if error happened throw this error
                         });
                         Device.findByIdAndUpdate(deviceId, {$push: {user: userId}}, {new: true}, function (err) {
                             if (err) throw err;
-                            else res.json(200,{success: true, msg: 'Success'});
-                        });
-                    }
-                    else if (allowedAction === 'stop') {
-                        User.findByIdAndUpdate(userId, {$push: {stop: deviceId}}, {new: true}, function (err) {
-                            if (err) throw err;
-
-                        });
-                        Device.findByIdAndUpdate(deviceId, {$push: {user: userId}}, {new: true}, function (err) {
-                            if (err) throw err;
                             else res.json(200, {success: true, msg: 'Success'});
                         });
                     }
-                    else if (allowedAction === 'restart') {
-                        User.findByIdAndUpdate(userId, {$push: {restart: deviceId}}, {new: true}, function (err) {
-                            if (err) throw err;
-                        });
-                        Device.findByIdAndUpdate(deviceId, {$push: {user: userId.isNew}}, {new: true}, function (err) {
-                            if (err) throw err;
-                            else res.json(200, {success: true, msg: 'Success'});
-                        });
-                    }
-                    else res.send(400,{msg:"please pass action"});
+                    else res.send(400, {msg: "please pass action"});
                 }
                 else res.send(403, {success: false, msg: "You are not admin"});
 
@@ -55,6 +35,6 @@ router.post('/:userId/:deviceId/:allowedAction', (req, res) => {
 
         })
 
-    });
+});
 
 module.exports = router;

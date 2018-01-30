@@ -15,22 +15,26 @@ const login = require('./routes/login');
 const action = require('./routes/action');
 const config = require('./config/database');
 const User = require('./models/user');
-
+const fs = require('fs');
 
 //create connection to db
 mongoose.connect(config.database);
 console.log(config.database);
 
+// create a write stream for logger
+let accessLogStream = fs.createWriteStream(path.join(__dirname,'access.log'),{flags:'a'});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(passport.initialize());
-app.use(logger('dev'));
+app.use(logger('dev',{stream:accessLogStream}));//actually im using morgan as a logger
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+
 
 //user register, signin middlware
 app.use('/login', login);

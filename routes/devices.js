@@ -1,10 +1,9 @@
-const passport = require('passport');
-require('../config/passport')(passport);
 const express = require('express');
-const jwt = require('jsonwebtoken');
 const router = express.Router();
 const User = require("../models/user");
 const Device = require("../models/device");
+const passport = require('passport');
+require('../config/passport')(passport);
 
 //receive post request for adding Device
 router.post('/', (req, res) => {
