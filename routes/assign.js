@@ -35,6 +35,7 @@ router.post('/:userId/:deviceId/:allowedAction', (req, res) => {
 
         })
 
-});
+})
+;
 
 module.exports = router;

@@ -5,6 +5,8 @@ const Device = require("../models/device");
 const passport = require('passport');
 require('../config/passport')(passport);
 
+//we can add new .get endpoint to get all devices
+
 //receive post request for adding Device
 router.post('/', (req, res) => {
     let user = res.locals.users;
@@ -34,8 +36,7 @@ router.put("/:deviceId", (req, res) => {
             function (err, device) {
                 if (device) {
                     Device.findByIdAndUpdate(req.params.deviceId, {
-                        deviceType: req.body.deviceType,
-                        $push: {user: req.body.userId}
+                        deviceType: req.body.deviceType
                     }, {new: true}, function (err) {
                         if (err) res.send(err);
                         else res.json(200, {success: true, msg: 'Success'});
