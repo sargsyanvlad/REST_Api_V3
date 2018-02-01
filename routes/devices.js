@@ -15,11 +15,12 @@ if (user.role === 'admin') {
         user: req.body.user,
         deviceType: req.body.deviceType
     });
-    User.findByIdAndUpdate(user.id, {$push: {devices: [newDevice]}}, {new: true}, function (err, user) {
+    User.findByIdAndUpdate(user.id, {$push: {devices: [newDevice]}}, {new: true}, function (err) {
         if (err) return (err);
     });
     newDevice.save(function (err) {
         if (err) {
+            console.log(err);
             return res.json({success: false, msg: 'Save Device failed.'})
         }
         res.json(201, {success: true, msg: 'Successful created new Device.'})

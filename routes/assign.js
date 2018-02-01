@@ -6,19 +6,21 @@ const passport = require('passport');
 require('../config/passport')(passport);
 
 //assignining Device  and permission to User
-router.post('/:userId/:deviceId/:allowedAction', (req, res) => {
+router.post('/:userId/:deviceId/:allowedAction', function (req, res) {
     let loggeduser = res.locals.users;
-    var userId = req.params.userId;
-    var deviceId = req.params.deviceId;
-    var allowedAction = req.params.allowedAction;
-
+    let userId = req.params.userId;
+    let deviceId = req.params.deviceId;
+    let allowedAction = req.params.allowedAction;
+    var obj = {};
+    obj[allowedAction] = deviceId;
     User.findOne({_id: userId},
         function (err, user) {
             if (user) {
                 if (loggeduser.role === 'admin') {
                     if (allowedAction === 'start' || 'stop' || 'restart') {
-                        User.findByIdAndUpdate(userId, {$push: {user: [allowedAction] = deviceId}}, {new: true}, function (err) {
+                        User.findByIdAndUpdate(userId, {$push:obj}, {new:true}, function (err) {
                             if (err) throw err; //if error happened throw this error
+                            console.log(user);
                         });
                         Device.findByIdAndUpdate(deviceId, {$push: {user: userId}}, {new: true}, function (err) {
                             if (err) throw err;
@@ -32,10 +34,7 @@ router.post('/:userId/:deviceId/:allowedAction', (req, res) => {
             } else {
                 return res.send(401, {success: false, msg: "Cant Find User"});
             }
-
         })
-
-})
-;
+});
 
 module.exports = router;

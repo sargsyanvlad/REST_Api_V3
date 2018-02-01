@@ -7,7 +7,7 @@ var DeviceSchema = new Schema({
         type: String,
         required: true
     },
-    user: [{
+    users: [{
         type: Schema.Types.ObjectId,
         ref:  'User',
         required: false
