@@ -8,11 +8,11 @@ const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 const passport = require('passport');
-const users = require('./routes/users');
-const device = require('./routes/devices');
-const assign = require('./routes/assign');
-const login = require('./routes/login');
-const action = require('./routes/action');
+const users = require('./controllers/userController');
+const devices = require('./controllers/deviceController');
+const auth = require('./controllers/authController');
+const action = require('./controllers/actionsController');
+// const assign = require('./routes/assign');
 const config = require('./config/database');
 const User = require('./models/user');
 const fs = require('fs');
@@ -37,15 +37,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 //user register, signin middlware
-app.use('/login', login);
+app.use('/login', auth);
 
 
 // JWT Token authentication, with decoded token
 app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, res, next) {
-    var token = getToken(req.headers);
+    let token = getToken(req.headers);
     if (token) {
-        var decoded = jwt.decode(token, config.secret);
-        var current_time = Date.now().valueOf() / 1000;
+        let decoded = jwt.decode(token, config.secret);
+        let current_time = Date.now().valueOf() / 1000;
         if (current_time > decoded.exp) {       //check if expired  out or not
             return res.send(401,{msg:'Authorization timed out'});
         } else {
@@ -76,13 +76,13 @@ app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, 
 
 //users delete, update
 app.use('/auth/users', users);
-app.use('/auth/device', device);
-app.use('/auth/assign', assign);
-app.use('/auth/action', action);
+app.use('/auth/devices', devices);
+// app.use('/auth/assign', assign);
+app.use('/auth/actions', action);
 
 //error hanelers
 app.use(function (req, res, next) {
-    var err = new Error('Not Found');
+    let err = new Error('Not Found');
     err.status = 404;
     next(err);
 });
@@ -99,7 +99,7 @@ app.use(function (err, req, res, next) {
 //getToken function for getting token from req authorization headers
 getToken = function (headers) {
     if (headers && headers.authorization) {
-        var parted = headers.authorization.split(' ');
+        let parted = headers.authorization.split(' ');
         if (parted.length === 2) {
             return parted[1];
         } else {

@@ -1,9 +1,8 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-var bcrypt = require('bcrypt-nodejs');
-
+let mongoose = require('mongoose');
+let Schema = mongoose.Schema;
+let bcrypt = require('bcrypt-nodejs');
 //users schema
-var UserSchema = new Schema({
+let UserSchema = new Schema({
     created: {
         type: Date,
         default: Date.now,
@@ -23,29 +22,15 @@ var UserSchema = new Schema({
         type: String, //we can consider using array of strings as in case user has several roles at the same time
         requierd: true
     },
-
-    start: [
+    permission: [
         {
-            type: Schema.Types.ObjectId,
-            ref: "Device"
+            type: Object,
+            default: 'none'
         }
     ],
-
-    stop: [
+    devices: [
         {
-            type: Schema.Types.ObjectId,
-            ref: "Device"
-        }
-    ],
-
-    restart: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: "Device"
-        }
-    ],
-    devices: [//we can delete this array because above in permissions arrays(start,restart,stop) we can see is any devicees assigned or not
-        {
+            permission: Array,
             type: Schema.Types.ObjectId,
             ref: "Device",
             required: false
@@ -54,10 +39,9 @@ var UserSchema = new Schema({
 
 });
 
-
 //call method .pre before saving user for password hashing
 UserSchema.pre('save', function (next) {
-    var user = this;
+    let user = this;
     if (this.isModified('password') || this.isNew) {
         bcrypt.genSalt(10, function (err, salt) {
             if (err) {
