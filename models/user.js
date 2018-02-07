@@ -22,23 +22,17 @@ let UserSchema = new Schema({
         type: String, //we can consider using array of strings as in case user has several roles at the same time
         requierd: true
     },
-    permission: [
-        {
-            type: Object,
-            default: 'none'
-        }
-    ],
     devices: [
         {
-            permission: Array,
-            type: Schema.Types.ObjectId,
-            ref: "Device",
-            required: false
+            _id: '',
+            permissions:[],
         }
-    ]
-
+    ],
 });
 
+//It's impossible to move that part of code to another directory, because it's Middleware for schema
+// and, it sould be specified in schema level
+//************************************************//
 //call method .pre before saving user for password hashing
 UserSchema.pre('save', function (next) {
     let user = this;
@@ -69,5 +63,6 @@ UserSchema.methods.comparePassword = function (passw, cb) {
         cb(null, isMatch);
     });
 };
+//************************************************//
 
 module.exports = mongoose.model('User', UserSchema);

@@ -77,7 +77,6 @@ app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, 
 //users delete, update
 app.use('/auth/users', users);
 app.use('/auth/devices', devices);
-// app.use('/auth/assign', assign);
 app.use('/auth/actions', action);
 
 //error hanelers

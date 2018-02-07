@@ -4,7 +4,7 @@ let bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({extended: true}));
 router.use(bodyParser.json());
 let User = require('../models/user');
-
+let Device = require('../models/device');
 //get all users
 router.get('/', function (req, res) {
     User.find({}, function (err, users) {
@@ -17,18 +17,21 @@ router.get('/', function (req, res) {
 router.post('/:userId/:deviceId/', function (req, res) {
     let loggeduser = res.locals.users;
     let userId = req.params.userId;
-    let deviceId = req.params.deviceId;
-    let permission = req.body.permission;
-    let obj = {};
-    obj[permission] = deviceId;
+    // let deviceId = req.params.deviceId;
+    // let permission = req.body.permission;
+    let obj = {
+        _id: req.params.deviceId,
+        permissions: req.body.permission
+    };
     User.findOne({_id: userId},
         function (err, user) {
             if (user) {
                 if (loggeduser.role === 'admin') {
-                    User.findByIdAndUpdate(userId, {$push: {permission:obj}}, {new: true}, function (err) {
+                    console.log(obj);
+                    User.findByIdAndUpdate(userId, {$push: {devices:obj}}, {new: true}, function (err) {
                         if (err) throw err; //if error happened throw this error
                         else res.json(200, {success: true, msg: 'Success'});
-                        console.log(user);
+                        // console.log(user);
                     });
                     // Device.findByIdAndUpdate(deviceId, {$push: {user: userId}}, {new: true}, function (err) {
                     //     if (err) throw err;
