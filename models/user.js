@@ -24,10 +24,10 @@ let UserSchema = new Schema({
     },
     devices: [
         {
-            _id: '',
-            permissions:[],
+            id: '',
+            permissions:[]
         }
-    ],
+    ]
 });
 
 //It's impossible to move that part of code to another directory, because it's Middleware for schema

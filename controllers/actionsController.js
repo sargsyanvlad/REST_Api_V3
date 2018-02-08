@@ -14,13 +14,14 @@ router.post('/:deviceId/:action',(req, res) => {
             function (err, device) {
                 if (device) {
                     User.find({_id: user.id}).populate({
-                        path: deviceId
-                    }).exec(function(error, data){
-                        if(error) {
+                        path: 'devices'
+                    }).exec(function (error, user) {
+                        if (error) {
                             res.send(error)
-                        } if (user[action] === deviceId ) res.send(200,{msg:"Success"});
-                        else res.send(403,{msg:'You are not assigned to this action'});
-                    })
+                        } else res.send(user[0]);
+                        // if (user[action] === deviceId ) res.send(200,{msg:"Success"});
+                        // else console.log(user), res.send(403,{msg:'You are not assigned to this action'});
+                    });
                 } else {
                     return res.send(401,{message: 'Device Not found'});
                 }
