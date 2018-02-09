@@ -19,38 +19,27 @@ router.post('/:userId/:deviceId/', function (req, res) {
     let userId = req.params.userId;
     let deviceId = req.params.deviceId;
     // let permission = req.body.permission;
-    let obj = {
-        _id:req.params.deviceId,
-        permissions: req.body.permission
-    };
-    User.findOne({_id: userId},{devices:{$in:[deviceId]}},
+    // let obj = {
+    //     _id: req.params.deviceId,
+    //     permissions: req.body.permission
+    // };
+    User.findOne({_id: userId},
         function (err, user) {
             if (user) {
                 console.log(user.devices);
                 if (loggeduser.role === 'admin') {
                     // console.log(obj);
-                    User.findByIdAndUpdate(userId,  function (err,data) {
+                    // console.log(user);
+                    User.findByIdAndUpdate(userIduser, {$push: {devices: obj}}, {new: true}, function (err) {
                         if (err) throw err; //if error happened throw this error
-                        else res.json(200,data);
+                        else res.json(200, user);
                         // console.log(user);
                     });
-                    // User.findByIdAndUpdate( userIduser, {$push: {devices:obj}}, {new: true}, function (err) {
-                    //     if (err) throw err; //if error happened throw this error
-                    //     else res.json(200,user);
-                    //     // console.log(user);
-                    // });
-                    // Device.findByIdAndUpdate(deviceId, {$push: {user: userId}}, {new: true}, function (err) {
-                    //     if (err) throw err;
-                    //
-                    // });
-                    // User.update(
-                    //     {id: user.id},
-                    //     {$push:{devices:{$each:obj}}}
-                    // )
-                    // db.inventory.update(
-                    //     { _id: 2 },
-                    //     { $addToSet: { tags: { $each: [ "camera", "electronics", "accessories" ] } } }
-                    // )
+                    Device.findByIdAndUpdate(deviceId, {$push: {user: userId}}, {new: true}, function (err) {
+                        if (err) throw err;
+
+                    });
+
                 }
                 else res.send(403, {success: false, msg: "You are not admin"});
             } else {

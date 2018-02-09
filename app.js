@@ -4,17 +4,16 @@ const path = require('path');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 const passport = require('passport');
 const users = require('./controllers/userController');
 const devices = require('./controllers/deviceController');
-const auth = require('./controllers/authController');
+const reg = require('./controllers/authController');
 const action = require('./controllers/actionsController');
-// const assign = require('./routes/assign');
+const auth = require('./controllers/authenticator');
 const config = require('./config/database');
-const User = require('./models/user');
+
 const fs = require('fs');
 
 //create connection to db
@@ -37,43 +36,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 //user register, signin middlware
-app.use('/login', auth);
+app.use('/login', reg);
 
 
 // JWT Token authentication, with decoded token
-app.use('/auth', passport.authenticate('jwt', {session: false}), function (req, res, next) {
-    let token = getToken(req.headers);
-    if (token) {
-        let decoded = jwt.decode(token, config.secret);
-        let current_time = Date.now().valueOf() / 1000;
-        if (current_time > decoded.exp) {       //check if expired  out or not
-            return res.send(401,{msg:'Authorization timed out'});
-        } else {
-            User.findOne({username: decoded.username},
-                function (err, user) {
-                    if (err) {
-                        res.send(202,{success: false, msg: "you are not authorized"});
-                    }
-                    if (user) {
-                        res.locals.users = user;
-                        next();
-                    } else {
-                        return res.send(401,{
-                            'status': 401,
-                            'code': 2,
-                            'message': 'User Not found'
-                        });
-                    }
-
-                });
-        }
-    } else {
-        next();
-        res.status(204).json({success: false, msg: "unautorized"})
-
-    }
-});
-
+app.use('/auth', auth);
 //users delete, update
 app.use('/auth/users', users);
 app.use('/auth/devices', devices);

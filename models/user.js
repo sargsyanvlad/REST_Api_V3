@@ -32,7 +32,7 @@ let UserSchema = new Schema({
 
 //It's impossible to move that part of code to another directory, because it's Middleware for schema
 // and, it sould be specified in schema level
-//************************************************//
+///************************************************//
 //call method .pre before saving user for password hashing
 UserSchema.pre('save', function (next) {
     let user = this;
