@@ -39,4 +39,18 @@ router.use('/', passport.authenticate('jwt', {session: false}), function (req, r
     }
 });
 
+//getToken function for getting token from req authorization headers
+getToken = function (headers) {
+    if (headers && headers.authorization) {
+        let parted = headers.authorization.split(' ');
+        if (parted.length === 2) {
+            return parted[1];
+        } else {
+            return null;
+        }
+    } else {
+        return null;
+    }
+};
+
 module.exports = router;

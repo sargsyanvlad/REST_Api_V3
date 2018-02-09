@@ -9,11 +9,11 @@ mongoose.Promise = global.Promise;
 const passport = require('passport');
 const users = require('./controllers/userController');
 const devices = require('./controllers/deviceController');
-const reg = require('./controllers/authController');
+const login = require('./controllers/authController');
 const action = require('./controllers/actionsController');
 const auth = require('./controllers/authenticator');
 const config = require('./config/database');
-
+const test  = require('./controllers/test');
 const fs = require('fs');
 
 //create connection to db
@@ -34,11 +34,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
+app.use('/test', test);
 //user register, signin middlware
-app.use('/login', reg);
-
-
+app.use('/login', login);
 // JWT Token authentication, with decoded token
 app.use('/auth', auth);
 //users delete, update
@@ -61,20 +59,6 @@ app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 });
-
-//getToken function for getting token from req authorization headers
-getToken = function (headers) {
-    if (headers && headers.authorization) {
-        let parted = headers.authorization.split(' ');
-        if (parted.length === 2) {
-            return parted[1];
-        } else {
-            return null;
-        }
-    } else {
-        return null;
-    }
-};
 
 app.listen(8080, "192.168.2.56");
 module.exports = app;

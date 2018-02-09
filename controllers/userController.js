@@ -19,29 +19,43 @@ router.post('/:userId/:deviceId/', function (req, res) {
     let userId = req.params.userId;
     let deviceId = req.params.deviceId;
     // let permission = req.body.permission;
-    // let obj = {
-    //     _id: req.params.deviceId,
-    //     permissions: req.body.permission
-    // };
+    let obj = {
+        _id: req.params.deviceId,
+        permissions: req.body.permission
+    };
     User.findOne({_id: userId},
         function (err, user) {
             if (user) {
                 console.log(user.devices);
-                if (loggeduser.role === 'admin') {
-                    // console.log(obj);
-                    // console.log(user);
-                    User.findByIdAndUpdate(userIduser, {$push: {devices: obj}}, {new: true}, function (err) {
-                        if (err) throw err; //if error happened throw this error
-                        else res.json(200, user);
-                        // console.log(user);
+                User.findOne({ $or:[ {'devices.id': deviceId}, {'devices.permissions': req.body.permission}  ]}).exec()
+                    .then(user => {
+                        if(user) {
+                            res.send(user);
+                        } else {
+                                User.findByIdAndUpdate(userId, {$push: {devices: obj}}, {new: true}, function (err) {
+                                    if (err) throw err; //if error happened throw this error
+                                    else res.json(200, user);
+                                    // console.log(user);
+                                });
+                        }
                     });
-                    Device.findByIdAndUpdate(deviceId, {$push: {user: userId}}, {new: true}, function (err) {
-                        if (err) throw err;
 
-                    });
-
-                }
-                else res.send(403, {success: false, msg: "You are not admin"});
+                //working example without chekching is dame device and permission exist or not
+                // if (loggeduser.role === 'admin') {
+                //     // console.log(obj);
+                //     // console.log(user);
+                //     User.findByIdAndUpdate(userId, {$push: {devices: obj}}, {new: true}, function (err) {
+                //         if (err) throw err; //if error happened throw this error
+                //         else res.json(200, user);
+                //         // console.log(user);
+                //     });
+                //     Device.findByIdAndUpdate(deviceId, {$push: {user: userId}}, {new: true}, function (err) {
+                //         if (err) throw err;
+                //
+                //     });
+                //
+                // }
+                // else res.send(403, {success: false, msg: "You are not admin"});
             } else {
                 return res.send(401, {success: false, msg: "Cant Find User"});
             }
