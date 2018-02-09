@@ -23,18 +23,22 @@ router.post('/:userId/:deviceId/', function (req, res) {
         _id:req.params.deviceId,
         permissions: req.body.permission
     };
-    User.findOne({_id: userId},
+    User.findOne({_id: userId},{devices:{$in:[deviceId]}},
         function (err, user) {
             if (user) {
-
                 console.log(user.devices);
                 if (loggeduser.role === 'admin') {
                     // console.log(obj);
-                    User.findByIdAndUpdate(userId, {$push: {devices:obj}}, {new: true}, function (err) {
+                    User.findByIdAndUpdate(userId,  function (err,data) {
                         if (err) throw err; //if error happened throw this error
-                        else res.json(200,user);
+                        else res.json(200,data);
                         // console.log(user);
                     });
+                    // User.findByIdAndUpdate( userIduser, {$push: {devices:obj}}, {new: true}, function (err) {
+                    //     if (err) throw err; //if error happened throw this error
+                    //     else res.json(200,user);
+                    //     // console.log(user);
+                    // });
                     // Device.findByIdAndUpdate(deviceId, {$push: {user: userId}}, {new: true}, function (err) {
                     //     if (err) throw err;
                     //

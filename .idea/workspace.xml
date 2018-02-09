@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d82bf431-94a9-4fbf-b912-818bbe91854e" name="Default" comment="Adding permissions scheme">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/actionsController.js" afterPath="$PROJECT_DIR$/controllers/actionsController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/userController.js" afterPath="$PROJECT_DIR$/controllers/userController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/user.js" afterPath="$PROJECT_DIR$/models/user.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,8 +79,8 @@
       <file leaf-file-name="userController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/userController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+            <state relative-caret-position="342">
+              <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -361,16 +358,15 @@
       <workItem from="1516950531194" duration="25703000" />
       <workItem from="1517135269224" duration="46303000" />
       <workItem from="1517904488558" duration="10436000" />
-      <workItem from="1517986180879" duration="22450000" />
+      <workItem from="1517986180879" duration="26723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113966000" />
+    <option name="totallyTimeSpent" value="118239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12172489" sideWeight="0.49467275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -739,8 +735,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/userController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        <state relative-caret-position="342">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding />
         </state>
       </provider>
