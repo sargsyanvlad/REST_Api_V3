@@ -34,7 +34,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use('/test', test);
+
 //user register, signin middlware
 app.use('/login', login);
 // JWT Token authentication, with decoded token
@@ -43,7 +43,8 @@ app.use('/auth', auth);
 app.use('/auth/users', users);
 app.use('/auth/devices', devices);
 app.use('/auth/actions', action);
-
+//test path
+app.use('/auth/test', test);
 //error hanelers
 app.use(function (req, res, next) {
     let err = new Error('Not Found');
@@ -60,5 +61,5 @@ app.use(function (err, req, res, next) {
     res.render('error');
 });
 
-app.listen(8080, "192.168.2.56");
+app.listen(8080, "127.0.0.1");
 module.exports = app;

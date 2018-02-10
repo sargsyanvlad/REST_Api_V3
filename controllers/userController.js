@@ -4,38 +4,47 @@ let bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({extended: true}));
 router.use(bodyParser.json());
 let User = require('../models/user');
-let Device = require('../models/device');
+
 //get all users
 router.get('/', function (req, res) {
-    User.find({}, function (err, users) {
+    console.log(res.locals.users);
+    User.find({}, function (err, user) {
         if (err) return res.status(500).send("There was a problem finding the users.");
-        res.status(200).send(users);
+        res.status(200).send(user, );
     });
 });
 
-//assignining Device  and permission to User
+//assigning Device  and permission to User when Post request is coming
+//also we can add '/put', '/patch', '/delete' req handlers for replacing, updating or deleting user's permissions
 router.post('/:userId/:deviceId/', function (req, res) {
     let loggeduser = res.locals.users;
     let userId = req.params.userId;
     let deviceId = req.params.deviceId;
     // let permission = req.body.permission;
     let obj = {
+        _id: req.params.deviceId,
         permissions: req.body.permission
     };
-    User.findOne({_id: userId},
+    let prem = '';
+    perm = req.body.permission;
+    User.findOne({_id: userId}, //check is the passed user ID exist
         function (err, user) {
-            if (user) {
-                console.log(user.devices);
-                User.findOne({ $or:[ {'devices.id': deviceId}, {'devices.permissions': req.body.permission}  ]}).exec()
+            if (user) { //if exist
+                User.findOne({'devices._id': deviceId}).exec()  //check is device ID already assigned to user
                     .then(user => {
-                        if(user) {
-                            res.send(user);
-                        } else {
-                                User.findByIdAndUpdate(userId, {$push: {devices: obj}}, {new: true}, function (err) {
-                                    if (err) throw err; //if error happened throw this error
-                                    else res.json(200, user);
-                                    // console.log(user);
+                        if (user) { //if  device  assigned just update user permissions, avoiding duplications
+                            User.update({'devices._id': deviceId}, {"$addToSet": {"devices.$.permissions": perm}}, function (err, data) {
+                                if (err) res.send(err);
+                                else res.send(data);
+                            });
+                        } else { //else push whole object, 'obj', in user
+                            User.findByIdAndUpdate(userId, {$push: {devices: obj}}, {new: true}, function (err) {
+                                if (err) res.send(err); //if error happened response  this error
+                                else res.json(200, {
+                                    suscess: true,
+                                    msg: 'Device Assigned to user, and new permissionss added'
                                 });
+                            });
                         }
                     });
 

@@ -33,7 +33,7 @@ router.use('/', passport.authenticate('jwt', {session: false}), function (req, r
                 });
         }
     } else {
-        next();
+        // next();
         res.status(204).json({success: false, msg: "unautorized"})
 
     }
@@ -52,5 +52,4 @@ getToken = function (headers) {
         return null;
     }
 };
-
 module.exports = router;
