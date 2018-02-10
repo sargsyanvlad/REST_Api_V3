@@ -20,7 +20,6 @@ router.post('/:userId/:deviceId/', function (req, res) {
     let deviceId = req.params.deviceId;
     // let permission = req.body.permission;
     let obj = {
-        _id: req.params.deviceId,
         permissions: req.body.permission
     };
     User.findOne({_id: userId},
