@@ -2,249 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d82bf431-94a9-4fbf-b912-818bbe91854e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mongoose/d1c5478c698dcae9731751e285eef3c431a8f213.patch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mongoose/docs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mongoose/mongoose5_transparent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mongoose/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/pug-parser/try.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/resolve/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/_/.npmignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/voov.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/voov.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/access.log" afterPath="$PROJECT_DIR$/access.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/auth_controller.js" afterPath="$PROJECT_DIR$/api/controllers/auth_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/calls_controller.js" afterPath="$PROJECT_DIR$/api/controllers/calls_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/users_controller.js" afterPath="$PROJECT_DIR$/api/controllers/users_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/apps_router.js" afterPath="$PROJECT_DIR$/api/routes/apps_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/auth_router.js" afterPath="$PROJECT_DIR$/api/routes/auth_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/calls_router.js" afterPath="$PROJECT_DIR$/api/routes/calls_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/commands_router.js" afterPath="$PROJECT_DIR$/api/routes/commands_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/contacts_router.js" afterPath="$PROJECT_DIR$/api/routes/contacts_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/devices_router.js" afterPath="$PROJECT_DIR$/api/routes/devices_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/messages_router.js" afterPath="$PROJECT_DIR$/api/routes/messages_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/notifications_router.js" afterPath="$PROJECT_DIR$/api/routes/notifications_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/upload_router.js" afterPath="$PROJECT_DIR$/api/routes/upload_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/users_router.js" afterPath="$PROJECT_DIR$/api/routes/users_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.js" afterPath="$PROJECT_DIR$/config/database.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/passport.js" afterPath="$PROJECT_DIR$/config/passport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/bson/HISTORY.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/README.md" afterPath="$PROJECT_DIR$/node_modules/bson/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/browser_build/bson.js" afterPath="$PROJECT_DIR$/node_modules/bson/browser_build/bson.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/index.js" afterPath="$PROJECT_DIR$/node_modules/bson/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/binary.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/binary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/bson.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/bson.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/code.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/code.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/db_ref.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/db_ref.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/decimal128.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/decimal128.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/double.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/double.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/float_parser.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/float_parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/int_32.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/int_32.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/long.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/long.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/map.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/max_key.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/max_key.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/min_key.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/min_key.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/objectid.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/objectid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/calculate_size.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/calculate_size.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/deserializer.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/deserializer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/serializer.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/serializer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/regexp.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/regexp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/symbol.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/symbol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/timestamp.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/timestamp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/package.json" afterPath="$PROJECT_DIR$/node_modules/bson/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/Jakefile" afterPath="$PROJECT_DIR$/node_modules/ejs/Jakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/README.md" afterPath="$PROJECT_DIR$/node_modules/ejs/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.js" afterPath="$PROJECT_DIR$/node_modules/ejs/ejs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" afterPath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" afterPath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/ejs/lib/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/package.json" afterPath="$PROJECT_DIR$/node_modules/ejs/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/jsonwebtoken/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/README.md" afterPath="$PROJECT_DIR$/node_modules/jsonwebtoken/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/package.json" afterPath="$PROJECT_DIR$/node_modules/jsonwebtoken/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/sign.js" afterPath="$PROJECT_DIR$/node_modules/jsonwebtoken/sign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/History.md" afterPath="$PROJECT_DIR$/node_modules/mongoose/History.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/connection.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/connection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/document.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/document.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/services/model/discriminator.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/services/model/discriminator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-attrs/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-attrs/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-code-gen/index.js" afterPath="$PROJECT_DIR$/node_modules/pug-code-gen/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-code-gen/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-code-gen/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/lib/handle-filters.js" afterPath="$PROJECT_DIR$/node_modules/pug-filters/lib/handle-filters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-filters/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/test/__snapshots__/index.test.js.snap" afterPath="$PROJECT_DIR$/node_modules/pug-filters/test/__snapshots__/index.test.js.snap" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/test/cases/filters.include.input.json" afterPath="$PROJECT_DIR$/node_modules/pug-filters/test/cases/filters.include.input.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/test/index.test.js" afterPath="$PROJECT_DIR$/node_modules/pug-filters/test/index.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/test/update-test-cases.js" afterPath="$PROJECT_DIR$/node_modules/pug-filters/test/update-test-cases.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/index.js" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/test/__snapshots__/index.test.js.snap" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/test/__snapshots__/index.test.js.snap" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/test/cases/classes.pug" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/test/cases/classes.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/test/cases/filters.include.pug" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/test/cases/filters.include.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/test/index.test.js" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/test/index.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-linker/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-linker/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-load/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-load/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/README.md" afterPath="$PROJECT_DIR$/node_modules/pug-parser/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/index.js" afterPath="$PROJECT_DIR$/node_modules/pug-parser/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/__snapshots__/index.test.js.snap" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/__snapshots__/index.test.js.snap" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attr-es2015.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attr-es2015.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs-data.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs-data.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.js.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.js.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.unescaped.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.unescaped.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/basic.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/basic.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blanks.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blanks.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-code.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-code.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-expansion.shorthands.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-expansion.shorthands.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-expansion.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-expansion.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blockquote.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blockquote.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blocks-in-blocks.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blocks-in-blocks.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blocks-in-if.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blocks-in-if.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/case-blocks.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/case-blocks.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/case.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/case.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/classes-empty.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/classes-empty.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/classes.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/classes.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.conditionals.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.conditionals.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.escape.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.escape.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.iteration.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.iteration.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments-in-case.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments-in-case.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments.source.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments.source.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.custom.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.custom.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.default.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.default.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.keyword.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.keyword.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/each.else.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/each.else.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escape-chars.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escape-chars.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escape-test.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escape-test.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escaping-class-attribute.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escaping-class-attribute.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filter-in-include.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filter-in-include.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters-empty.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters-empty.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.coffeescript.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.coffeescript.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.custom.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.custom.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.include.custom.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.include.custom.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.include.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.include.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.inline.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.inline.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.less.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.less.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.markdown.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.markdown.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.nested.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.nested.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.stylus.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.stylus.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/html.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/html.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/html5.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/html5.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-from-root.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-from-root.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-of-common-template.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-of-common-template.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-relative.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-relative.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-only-text-body.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-only-text-body.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-only-text.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-only-text.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-with-text-head.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-with-text-head.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-with-text.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-with-text.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include.script.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include.script.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include.yield.nested.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include.yield.nested.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/includes-with-ext-js.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/includes-with-ext-js.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/includes.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/includes.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.alert-dialog.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.alert-dialog.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.defaults.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.defaults.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.include.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.include.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.mixins.block.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.mixins.block.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.mixins.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.mixins.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.recursive.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.recursive.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.whitespace.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.whitespace.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inline-block-comment.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inline-block-comment.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inline-tag.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inline-tag.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/intepolated-elements.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/intepolated-elements.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/interpolated-mixin.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/interpolated-mixin.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/interpolation.escape.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/interpolation.escape.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.append.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.append.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.append.without-block.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.append.without-block.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.multi.append.prepend.block.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.multi.append.prepend.block.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.prepend.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.prepend.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.prepend.without-block.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.prepend.without-block.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-at-end-of-file.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-at-end-of-file.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-block-with-space.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-block-with-space.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-hoist.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-hoist.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-via-include.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-via-include.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.attrs.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.attrs.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.block-tag-behaviour.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.block-tag-behaviour.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.blocks.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.blocks.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.merge.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.merge.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins-unused.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins-unused.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins.rest-args.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins.rest-args.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/namespaces.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/namespaces.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/nesting.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/nesting.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-comments.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-comments.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-filters.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-filters.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-tag.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-tag.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pre.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pre.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/quotes.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/quotes.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/regression.1794.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/regression.1794.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/regression.784.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/regression.784.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/script.whitespace.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/script.whitespace.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/scripts.non-js.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/scripts.non-js.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/scripts.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/scripts.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/self-closing-html.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/self-closing-html.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/single-period.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/single-period.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/source.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/source.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/styles.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/styles.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tag-blocks.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tag-blocks.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tag.interpolation.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tag.interpolation.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tags.self-closing.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tags.self-closing.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/template.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/template.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/text-block.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/text-block.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/text.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/text.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/utf8bom.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/utf8bom.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/vars.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/vars.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/while.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/while.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/xml.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/xml.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-before-conditional-head.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-before-conditional-head.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-before-conditional.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-before-conditional.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-head.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-head.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-title-head.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-title-head.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-title.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-title.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield.tokens.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-runtime/index.js" afterPath="$PROJECT_DIR$/node_modules/pug-runtime/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-runtime/lib/sources.js" afterPath="$PROJECT_DIR$/node_modules/pug-runtime/lib/sources.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-runtime/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-runtime/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-strip-comments/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-strip-comments/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-strip-comments/test/index.test.js" afterPath="$PROJECT_DIR$/node_modules/pug-strip-comments/test/index.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-walk/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-walk/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/pug/lib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/package.json" afterPath="$PROJECT_DIR$/node_modules/pug/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/__snapshots__/pug.test.js.snap" afterPath="$PROJECT_DIR$/node_modules/pug/test/__snapshots__/pug.test.js.snap" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/cases-es2015/attr.html" afterPath="$PROJECT_DIR$/node_modules/pug/test/cases-es2015/attr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/cases/styles.html" afterPath="$PROJECT_DIR$/node_modules/pug/test/cases/styles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output-es2015/attr.html" afterPath="$PROJECT_DIR$/node_modules/pug/test/output-es2015/attr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output-es2015/attr.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output-es2015/attr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/attrs.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/attrs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/attrs.js.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/attrs.js.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/html5.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/html5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/mixin.attrs.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/mixin.attrs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/mixin.merge.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/mixin.merge.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/regression.1794.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/regression.1794.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/source.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/source.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/styles.html" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/styles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/styles.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/styles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/tag.interpolation.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/tag.interpolation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/pug.test.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/pug.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/resolve/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/lib/core.js" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/lib/core.json" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/core.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/package.json" afterPath="$PROJECT_DIR$/node_modules/resolve/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/readme.markdown" afterPath="$PROJECT_DIR$/node_modules/resolve/readme.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/test/core.js" afterPath="$PROJECT_DIR$/node_modules/resolve/test/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-favicon/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/serve-favicon/HISTORY.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-favicon/README.md" afterPath="$PROJECT_DIR$/node_modules/serve-favicon/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-favicon/index.js" afterPath="$PROJECT_DIR$/node_modules/serve-favicon/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-favicon/package.json" afterPath="$PROJECT_DIR$/node_modules/serve-favicon/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -257,7 +16,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -268,7 +38,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mongoose</find>
       <find>res</find>
       <find>getFileById</find>
       <find>files</find>
@@ -298,6 +67,7 @@
       <find>messa</find>
       <find>save</find>
       <find>#fbuilder .medium</find>
+      <find>node_modules</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -622,7 +392,7 @@
       <workItem from="1522738089679" duration="12339000" />
       <workItem from="1523031586243" duration="1839000" />
       <workItem from="1523209378462" duration="1068000" />
-      <workItem from="1523267020146" duration="924000" />
+      <workItem from="1523267020146" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="commite message">
       <created>1518279762953</created>
@@ -635,10 +405,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283081000" />
+    <option name="totallyTimeSpent" value="283237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18903892" sideWeight="0.49467275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -647,7 +418,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14391144" sideWeight="0.5053272" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35350758" sideWeight="0.49722" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35350758" sideWeight="0.49722" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43108973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1002,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        <state relative-caret-position="352">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding />
         </state>
       </provider>
