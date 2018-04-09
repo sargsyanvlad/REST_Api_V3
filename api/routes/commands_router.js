@@ -1,11 +1,11 @@
 module.exports = function (app) {
-    const appCtrl = require('../../controllers/apps_controller');
-    app.route('/applist')
-        .post(appCtrl.save_app_list);
+    const commandsCtrl = require('../controllers/commands_controller');
 
-    app.route('/auth/applist')
-        .get(appCtrl.get_app_list);
+    app.route('/commands/:id')
+        .get(commandsCtrl.get_commands);
 
-    app.route('/auth/applist/:id')
-        .get(appCtrl.get_app_list_byID);
+    app.route('/auth/commands/:id')
+        .post(commandsCtrl.send_commands)
+        .put(commandsCtrl.update_commands); //its possible to add put endpoint for updating commands
+
 };

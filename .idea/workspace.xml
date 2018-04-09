@@ -1,27 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d82bf431-94a9-4fbf-b912-818bbe91854e" name="Default" comment="Adding permissions scheme">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/mongoose5_transparent.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/voov.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/access.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/d1c5478c698dcae9731751e285eef3c431a8f213.patch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/docs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/services/populate/getSchemaTypes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/test.js" />
+    <list default="true" id="d82bf431-94a9-4fbf-b912-818bbe91854e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mongoose/d1c5478c698dcae9731751e285eef3c431a8f213.patch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mongoose/docs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mongoose/mongoose5_transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mongoose/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/pug-parser/try.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/resolve/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/_/.npmignore" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/voov.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/voov.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/access.log" afterPath="$PROJECT_DIR$/access.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/auth_controller.js" afterPath="$PROJECT_DIR$/api/controllers/auth_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/calls_controller.js" afterPath="$PROJECT_DIR$/api/controllers/calls_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/users_controller.js" afterPath="$PROJECT_DIR$/api/controllers/users_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/apps_router.js" afterPath="$PROJECT_DIR$/api/routes/apps_router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/auth_router.js" afterPath="$PROJECT_DIR$/api/routes/auth_router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/calls_router.js" afterPath="$PROJECT_DIR$/api/routes/calls_router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/commands_router.js" afterPath="$PROJECT_DIR$/api/routes/commands_router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/contacts_router.js" afterPath="$PROJECT_DIR$/api/routes/contacts_router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/devices_router.js" afterPath="$PROJECT_DIR$/api/routes/devices_router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/messages_router.js" afterPath="$PROJECT_DIR$/api/routes/messages_router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/notifications_router.js" afterPath="$PROJECT_DIR$/api/routes/notifications_router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/upload_router.js" afterPath="$PROJECT_DIR$/api/routes/upload_router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/users_router.js" afterPath="$PROJECT_DIR$/api/routes/users_router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.js" afterPath="$PROJECT_DIR$/config/database.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/passport.js" afterPath="$PROJECT_DIR$/config/passport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/actionsController.js" afterPath="$PROJECT_DIR$/controllers/actionsController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/authenticator.js" afterPath="$PROJECT_DIR$/controllers/authenticator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/test.js" afterPath="$PROJECT_DIR$/controllers/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/userController.js" afterPath="$PROJECT_DIR$/controllers/userController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/bson/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/README.md" afterPath="$PROJECT_DIR$/node_modules/bson/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/browser_build/bson.js" afterPath="$PROJECT_DIR$/node_modules/bson/browser_build/bson.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/index.js" afterPath="$PROJECT_DIR$/node_modules/bson/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/binary.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/binary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/bson.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/bson.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/code.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/code.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/db_ref.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/db_ref.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/decimal128.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/decimal128.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/double.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/double.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/float_parser.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/float_parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/int_32.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/int_32.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/long.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/long.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/map.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/max_key.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/max_key.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/min_key.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/min_key.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/objectid.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/objectid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/calculate_size.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/calculate_size.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/deserializer.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/deserializer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/serializer.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/parser/serializer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/regexp.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/regexp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/symbol.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/symbol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/lib/bson/timestamp.js" afterPath="$PROJECT_DIR$/node_modules/bson/lib/bson/timestamp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson/package.json" afterPath="$PROJECT_DIR$/node_modules/bson/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/Jakefile" afterPath="$PROJECT_DIR$/node_modules/ejs/Jakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/README.md" afterPath="$PROJECT_DIR$/node_modules/ejs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.js" afterPath="$PROJECT_DIR$/node_modules/ejs/ejs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" afterPath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" afterPath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/ejs/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/package.json" afterPath="$PROJECT_DIR$/node_modules/ejs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/jsonwebtoken/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/README.md" afterPath="$PROJECT_DIR$/node_modules/jsonwebtoken/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/package.json" afterPath="$PROJECT_DIR$/node_modules/jsonwebtoken/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/sign.js" afterPath="$PROJECT_DIR$/node_modules/jsonwebtoken/sign.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/History.md" afterPath="$PROJECT_DIR$/node_modules/mongoose/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/connection.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/connection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/document.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/document.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/services/model/discriminator.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/services/model/discriminator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/release-items.md" afterPath="$PROJECT_DIR$/node_modules/mongoose/release-items.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-attrs/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-attrs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-code-gen/index.js" afterPath="$PROJECT_DIR$/node_modules/pug-code-gen/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-code-gen/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-code-gen/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/lib/handle-filters.js" afterPath="$PROJECT_DIR$/node_modules/pug-filters/lib/handle-filters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-filters/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/test/__snapshots__/index.test.js.snap" afterPath="$PROJECT_DIR$/node_modules/pug-filters/test/__snapshots__/index.test.js.snap" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/test/cases/filters.include.input.json" afterPath="$PROJECT_DIR$/node_modules/pug-filters/test/cases/filters.include.input.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/test/index.test.js" afterPath="$PROJECT_DIR$/node_modules/pug-filters/test/index.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-filters/test/update-test-cases.js" afterPath="$PROJECT_DIR$/node_modules/pug-filters/test/update-test-cases.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/index.js" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/test/__snapshots__/index.test.js.snap" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/test/__snapshots__/index.test.js.snap" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/test/cases/classes.pug" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/test/cases/classes.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/test/cases/filters.include.pug" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/test/cases/filters.include.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-lexer/test/index.test.js" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/test/index.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-linker/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-linker/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-load/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-load/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/README.md" afterPath="$PROJECT_DIR$/node_modules/pug-parser/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/index.js" afterPath="$PROJECT_DIR$/node_modules/pug-parser/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/__snapshots__/index.test.js.snap" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/__snapshots__/index.test.js.snap" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attr-es2015.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attr-es2015.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs-data.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs-data.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.js.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.js.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.unescaped.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/attrs.unescaped.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/basic.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/basic.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blanks.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blanks.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-code.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-code.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-expansion.shorthands.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-expansion.shorthands.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-expansion.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/block-expansion.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blockquote.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blockquote.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blocks-in-blocks.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blocks-in-blocks.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blocks-in-if.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/blocks-in-if.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/case-blocks.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/case-blocks.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/case.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/case.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/classes-empty.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/classes-empty.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/classes.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/classes.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.conditionals.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.conditionals.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.escape.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.escape.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.iteration.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.iteration.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/code.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments-in-case.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments-in-case.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments.source.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments.source.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/comments.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.custom.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.custom.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.default.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.default.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.keyword.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/doctype.keyword.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/each.else.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/each.else.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escape-chars.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escape-chars.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escape-test.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escape-test.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escaping-class-attribute.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/escaping-class-attribute.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filter-in-include.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filter-in-include.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters-empty.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters-empty.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.coffeescript.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.coffeescript.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.custom.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.custom.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.include.custom.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.include.custom.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.include.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.include.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.inline.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.inline.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.less.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.less.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.markdown.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.markdown.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.nested.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.nested.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.stylus.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/filters.stylus.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/html.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/html.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/html5.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/html5.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-from-root.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-from-root.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-of-common-template.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-of-common-template.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-relative.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-extends-relative.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-only-text-body.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-only-text-body.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-only-text.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-only-text.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-with-text-head.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-with-text-head.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-with-text.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include-with-text.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include.script.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include.script.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include.yield.nested.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/include.yield.nested.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/includes-with-ext-js.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/includes-with-ext-js.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/includes.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/includes.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.alert-dialog.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.alert-dialog.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.defaults.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.defaults.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.include.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.include.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.mixins.block.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.mixins.block.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.mixins.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.mixins.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.recursive.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.recursive.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.whitespace.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.extend.whitespace.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inheritance.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inline-block-comment.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inline-block-comment.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inline-tag.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/inline-tag.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/intepolated-elements.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/intepolated-elements.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/interpolated-mixin.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/interpolated-mixin.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/interpolation.escape.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/interpolation.escape.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.append.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.append.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.append.without-block.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.append.without-block.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.multi.append.prepend.block.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.multi.append.prepend.block.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.prepend.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.prepend.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.prepend.without-block.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/layout.prepend.without-block.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-at-end-of-file.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-at-end-of-file.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-block-with-space.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-block-with-space.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-hoist.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-hoist.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-via-include.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin-via-include.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.attrs.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.attrs.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.block-tag-behaviour.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.block-tag-behaviour.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.blocks.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.blocks.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.merge.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixin.merge.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins-unused.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins-unused.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins.rest-args.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins.rest-args.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/mixins.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/namespaces.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/namespaces.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/nesting.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/nesting.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-comments.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-comments.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-filters.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-filters.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-tag.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pipeless-tag.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pre.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/pre.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/quotes.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/quotes.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/regression.1794.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/regression.1794.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/regression.784.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/regression.784.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/script.whitespace.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/script.whitespace.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/scripts.non-js.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/scripts.non-js.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/scripts.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/scripts.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/self-closing-html.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/self-closing-html.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/single-period.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/single-period.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/source.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/source.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/styles.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/styles.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tag-blocks.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tag-blocks.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tag.interpolation.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tag.interpolation.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tags.self-closing.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/tags.self-closing.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/template.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/template.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/text-block.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/text-block.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/text.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/text.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/utf8bom.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/utf8bom.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/vars.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/vars.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/while.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/while.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/xml.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/xml.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-before-conditional-head.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-before-conditional-head.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-before-conditional.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-before-conditional.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-head.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-head.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-title-head.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-title-head.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-title.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield-title.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield.tokens.json" afterPath="$PROJECT_DIR$/node_modules/pug-parser/test/cases/yield.tokens.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-runtime/index.js" afterPath="$PROJECT_DIR$/node_modules/pug-runtime/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-runtime/lib/sources.js" afterPath="$PROJECT_DIR$/node_modules/pug-runtime/lib/sources.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-runtime/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-runtime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-strip-comments/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-strip-comments/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-strip-comments/test/index.test.js" afterPath="$PROJECT_DIR$/node_modules/pug-strip-comments/test/index.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug-walk/package.json" afterPath="$PROJECT_DIR$/node_modules/pug-walk/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/pug/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/package.json" afterPath="$PROJECT_DIR$/node_modules/pug/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/__snapshots__/pug.test.js.snap" afterPath="$PROJECT_DIR$/node_modules/pug/test/__snapshots__/pug.test.js.snap" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/cases-es2015/attr.html" afterPath="$PROJECT_DIR$/node_modules/pug/test/cases-es2015/attr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/cases/styles.html" afterPath="$PROJECT_DIR$/node_modules/pug/test/cases/styles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output-es2015/attr.html" afterPath="$PROJECT_DIR$/node_modules/pug/test/output-es2015/attr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output-es2015/attr.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output-es2015/attr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/attrs.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/attrs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/attrs.js.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/attrs.js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/html5.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/html5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/mixin.attrs.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/mixin.attrs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/mixin.merge.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/mixin.merge.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/regression.1794.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/regression.1794.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/source.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/source.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/styles.html" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/styles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/styles.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/styles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/output/tag.interpolation.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/output/tag.interpolation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pug/test/pug.test.js" afterPath="$PROJECT_DIR$/node_modules/pug/test/pug.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/resolve/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/lib/core.js" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/lib/core.json" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/core.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/package.json" afterPath="$PROJECT_DIR$/node_modules/resolve/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/readme.markdown" afterPath="$PROJECT_DIR$/node_modules/resolve/readme.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/resolve/test/core.js" afterPath="$PROJECT_DIR$/node_modules/resolve/test/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-favicon/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/serve-favicon/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-favicon/README.md" afterPath="$PROJECT_DIR$/node_modules/serve-favicon/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-favicon/index.js" afterPath="$PROJECT_DIR$/node_modules/serve-favicon/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-favicon/package.json" afterPath="$PROJECT_DIR$/node_modules/serve-favicon/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
@@ -36,58 +257,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authenticator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/authenticator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/userController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="40" column="57" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actionsController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/actionsController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -98,37 +268,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>upDateDev</find>
-      <find>unautorized</find>
-      <find>/auth/</find>
-      <find>mess</find>
-      <find>code</find>
-      <find>exp</find>
-      <find>findByIdAndRemove</find>
-      <find>findOne</find>
-      <find>passport</find>
-      <find>morga</find>
-      <find>fs</find>
-      <find>morgan</find>
-      <find>loggeduser</find>
-      <find>body</find>
-      <find>save</find>
-      <find>bcrypt</find>
-      <find>UserSchema</find>
-      <find>permission</find>
-      <find>user</find>
-      <find>devices</find>
-      <find>jwt</find>
-      <find>auth</find>
-      <find>confi</find>
-      <find>getToken</find>
+      <find>mongoose</find>
+      <find>res</find>
+      <find>getFileById</find>
+      <find>files</find>
+      <find>config</find>
+      <find>reg</find>
       <find>obj</find>
-      <find>JSON.parse</find>
-      <find>var</find>
-      <find>users</find>
-      <find>res.</find>
-      <find>console</find>
+      <find>sms</find>
+      <find>uploader</find>
+      <find>auth</find>
+      <find>authC</find>
+      <find>authenticator</find>
+      <find>findby</find>
+      <find>!user</find>
+      <find>id</find>
+      <find>expi</find>
+      <find>&quot;msg&quot;: &quot;You are not admin&quot;</find>
+      <find>exp</find>
+      <find>callLogs</find>
+      <find>call</find>
+      <find>log</find>
+      <find>callogs</find>
+      <find>get_apps_byID</find>
+      <find>apps</find>
+      <find>app</find>
+      <find>callLo</find>
+      <find>update</find>
+      <find>messa</find>
+      <find>save</find>
+      <find>#fbuilder .medium</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -141,28 +314,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/routes/editUser.js" />
-        <option value="$PROJECT_DIR$/views/error.jade" />
-        <option value="$PROJECT_DIR$/routes/register.js" />
-        <option value="$PROJECT_DIR$/auth/authenticator.js" />
-        <option value="$PROJECT_DIR$/models/permissions.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/controllers/UserController.js" />
-        <option value="$PROJECT_DIR$/routes/login.js" />
-        <option value="$PROJECT_DIR$/routes/users.js" />
-        <option value="$PROJECT_DIR$/routes/devices.js" />
-        <option value="$PROJECT_DIR$/models/device.js" />
-        <option value="$PROJECT_DIR$/models/permission.js" />
-        <option value="$PROJECT_DIR$/routes/assign.js" />
-        <option value="$PROJECT_DIR$/routes/action.js" />
-        <option value="$PROJECT_DIR$/controllers/deviceController.js" />
-        <option value="$PROJECT_DIR$/models/user.js" />
-        <option value="$PROJECT_DIR$/controllers/authController.js" />
-        <option value="$PROJECT_DIR$/controllers/authenticator.js" />
-        <option value="$PROJECT_DIR$/controllers/userController.js" />
+        <option value="$PROJECT_DIR$/api/controllers/registerController.js" />
+        <option value="$PROJECT_DIR$/models/appList.js" />
+        <option value="$PROJECT_DIR$/api/controllers/commandsController.js" />
+        <option value="$PROJECT_DIR$/api/controllers/userController.js" />
+        <option value="$PROJECT_DIR$/routes/auth_router.js" />
+        <option value="$PROJECT_DIR$/routes/user_router.js" />
+        <option value="$PROJECT_DIR$/api/controllers/addApps.js" />
+        <option value="$PROJECT_DIR$/api/controllers/deviceController.js" />
+        <option value="vm:669" />
+        <option value="module.js" />
+        <option value="$PROJECT_DIR$/api/routes/user_router.js" />
+        <option value="$PROJECT_DIR$/controllers/user_controller.js" />
+        <option value="$PROJECT_DIR$/api/controllers/authenticator.js" />
+        <option value="$PROJECT_DIR$/controllers/devices_controller.js" />
+        <option value="$PROJECT_DIR$/api/routes/device_router.js" />
+        <option value="$PROJECT_DIR$/controllers/app_list_controller.js" />
+        <option value="$PROJECT_DIR$/api/routes/app_list_router.js" />
+        <option value="$PROJECT_DIR$/controllers/call_log_controller.js" />
+        <option value="$PROJECT_DIR$/api/controllers/addCallLog.js" />
+        <option value="$PROJECT_DIR$/api/routes/call_log_router.js" />
+        <option value="$PROJECT_DIR$/controllers/calls_controller.js" />
+        <option value="$PROJECT_DIR$/controllers/apps_controller.js" />
+        <option value="$PROJECT_DIR$/api/routes/contacts_router.js" />
+        <option value="$PROJECT_DIR$/api/routes/auth_router.js" />
+        <option value="$PROJECT_DIR$/controllers/contacts_controller.js" />
+        <option value="$PROJECT_DIR$/controllers/auth_controller.js" />
+        <option value="$PROJECT_DIR$/models/files.js" />
+        <option value="$PROJECT_DIR$/models/users.js" />
+        <option value="$PROJECT_DIR$/models/devices.js" />
+        <option value="$PROJECT_DIR$/models/calls.js" />
+        <option value="$PROJECT_DIR$/models/apps.js" />
+        <option value="$PROJECT_DIR$/models/contacts.js" />
+        <option value="$PROJECT_DIR$/api/routes/apps_router.js" />
+        <option value="$PROJECT_DIR$/api/routes/commands_router.js" />
+        <option value="$PROJECT_DIR$/controllers/commands_controller.js" />
+        <option value="vm:636" />
+        <option value="$PROJECT_DIR$/models/messages.js" />
+        <option value="$PROJECT_DIR$/api/routes/messages_router.js" />
+        <option value="$PROJECT_DIR$/controllers/messages_controller.js" />
+        <option value="$PROJECT_DIR$/controllers/notifications_controller.js" />
+        <option value="$PROJECT_DIR$/api/routes/notifications_router.js" />
+        <option value="$PROJECT_DIR$/models/notifications.js" />
+        <option value="$PROJECT_DIR$/controllers/uploader.js" />
+        <option value="$PROJECT_DIR$/api/controllers/filesController.js" />
+        <option value="$PROJECT_DIR$/api/routes/upload_router.js" />
+        <option value="$PROJECT_DIR$/models/commands.js" />
+        <option value="$PROJECT_DIR$/if.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/controllers/test.js" />
-        <option value="$PROJECT_DIR$/controllers/actionsController.js" />
+        <option value="$PROJECT_DIR$/controllers/upload_controller.js" />
+        <option value="$PROJECT_DIR$/api/controllers/uploader.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -184,10 +386,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="709" />
+    <option name="height" value="713" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -204,24 +406,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="nodeRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodeRestApi" type="462c0819:PsiDirectoryNode" />
+              <item name="TSDRestApi-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TSDRestApi-2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="nodeRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodeRestApi" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="TSDRestApi-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TSDRestApi-2" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="TSDRestApi" type="cbb8eebc:String" user="TSDRestApi" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,13 +442,25 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptPreferStrict" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/voov/Desktop/TSDRestApi-2/controllers/messages_controller.js" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
+      <recent name="$PROJECT_DIR$/api/routes" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/controllers" />
+      <recent name="$PROJECT_DIR$/api/routes" />
+      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$/routes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -362,26 +586,69 @@
       <workItem from="1517904488558" duration="10436000" />
       <workItem from="1517986180879" duration="26723000" />
       <workItem from="1518161650475" duration="12672000" />
-      <workItem from="1518261725363" duration="13738000" />
+      <workItem from="1518261725363" duration="14557000" />
+      <workItem from="1518431435315" duration="3524000" />
+      <workItem from="1518453283869" duration="986000" />
+      <workItem from="1518463443672" duration="8000" />
+      <workItem from="1518596431664" duration="862000" />
+      <workItem from="1518598753616" duration="1123000" />
+      <workItem from="1518628452419" duration="1802000" />
+      <workItem from="1518798221761" duration="1202000" />
+      <workItem from="1518949786114" duration="808000" />
+      <workItem from="1518976333026" duration="328000" />
+      <workItem from="1519037041767" duration="11536000" />
+      <workItem from="1519126893576" duration="426000" />
+      <workItem from="1519138808037" duration="9771000" />
+      <workItem from="1519202012347" duration="4495000" />
+      <workItem from="1519301822009" duration="3106000" />
+      <workItem from="1519394688960" duration="494000" />
+      <workItem from="1519661414315" duration="996000" />
+      <workItem from="1519728915878" duration="9000" />
+      <workItem from="1519883671107" duration="123000" />
+      <workItem from="1519883866308" duration="12954000" />
+      <workItem from="1520323195630" duration="8755000" />
+      <workItem from="1520671845359" duration="6008000" />
+      <workItem from="1520682083454" duration="39000" />
+      <workItem from="1520837482696" duration="13399000" />
+      <workItem from="1521220943298" duration="4013000" />
+      <workItem from="1521275185695" duration="6882000" />
+      <workItem from="1521476859848" duration="433000" />
+      <workItem from="1521883817371" duration="76000" />
+      <workItem from="1521883949053" duration="7217000" />
+      <workItem from="1521923811386" duration="47000" />
+      <workItem from="1521981397844" duration="5157000" />
+      <workItem from="1522669268204" duration="14804000" />
+      <workItem from="1522703221235" duration="60000" />
+      <workItem from="1522738089679" duration="12339000" />
+      <workItem from="1523031586243" duration="1839000" />
+      <workItem from="1523209378462" duration="1068000" />
+      <workItem from="1523267020146" duration="924000" />
     </task>
+    <task id="LOCAL-00001" summary="commite message">
+      <created>1518279762953</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1518279762953</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144649000" />
+    <option name="totallyTimeSpent" value="283081000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12311358" sideWeight="0.49467275" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18903892" sideWeight="0.49467275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3403909" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278856" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70151305" sideWeight="0.50277996" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33653846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14391144" sideWeight="0.5053272" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7019544" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39739415" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35350758" sideWeight="0.49722" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43108973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -389,6 +656,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -400,357 +668,342 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding permissions scheme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding permissions scheme" />
+    <MESSAGE value="commite message" />
+    <option name="LAST_COMMIT_MESSAGE" value="commite message" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>50</line>
-          <option name="timeStamp" value="43" />
+          <url>file://$PROJECT_DIR$/api/controllers/filesController.js</url>
+          <line>11</line>
+          <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/controllers/userController.js</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="48" />
+          <url>file://$PROJECT_DIR$/api/controllers/messages_controller.js</url>
+          <line>6</line>
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/api/routes/upload_router.js</url>
+          <line>24</line>
+          <option name="timeStamp" value="214" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="50" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="219" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
-        <watch expression="upDateDev" language="JavaScript" />
-        <watch expression="allowedAction" language="JavaScript" />
-        <watch expression="user" language="JavaScript" />
-        <watch expression="$push: {allowedAction: userId}" language="JavaScript" />
-        <watch expression="'req.params.allowedAction'" language="JavaScript" />
-        <watch expression="`$:allowedAction`" language="JavaScript" />
+        <watch expression="callback" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/devices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="56" column="24" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/assign.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/permissions.js" />
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/device.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/assign.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/permissions.js" />
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="71" lean-forward="true" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/device.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/images.js" />
-    <entry file="file://$PROJECT_DIR$/routes/editUser.js" />
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/AJAX.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/error.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/authenticator.js" />
-    <entry file="file://$PROJECT_DIR$/routes/permissions.js" />
-    <entry file="file://$PROJECT_DIR$/models/permissions.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/schema/objectid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="197" column="14" lean-forward="false" selection-start-line="197" selection-start-column="14" selection-end-line="197" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/passport/lib/authenticator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="88" column="27" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jsonwebtoken/sign.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/passport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/access.log" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="2368" column="0" lean-forward="false" selection-start-line="2368" selection-start-column="0" selection-end-line="2368" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="457" column="0" lean-forward="false" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/permission.js" />
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/devices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-491">
-          <caret line="0" column="48" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="54" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/action.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="42" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/passport/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="181">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="211">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/assign.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/passport/lib/authenticator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1297">
+          <caret line="88" column="27" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/authenticator.js" />
+    <entry file="file://$PROJECT_DIR$/api/controllers/registerController.js" />
+    <entry file="file://$PROJECT_DIR$/api/controllers/userController.js" />
+    <entry file="file://$PROJECT_DIR$/api/routes/users_router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
+          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/authController.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/pug/examples/dynamicscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="120">
+          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/deviceController.js">
+    <entry file="file://$PROJECT_DIR$/api/controllers/devices_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/device.js">
+    <entry file="file://$PROJECT_DIR$/api/controllers/addCallLog.js" />
+    <entry file="file://$PROJECT_DIR$/api/routes/devices_router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.js">
+    <entry file="file://$PROJECT_DIR$/api/controllers/addContactlist.js" />
+    <entry file="file://$PROJECT_DIR$/api/routes/calls_router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="45">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/authenticator.js">
+    <entry file="file://$PROJECT_DIR$/api/controllers/apps_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/commandsController.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/passport/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="40" />
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/passport-jwt/lib/verify_jwt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/routes/smss_router.js" />
+    <entry file="file://$PROJECT_DIR$/api/controllers/auth_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="42" column="2" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/calls_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/apps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/calls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/contacts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/devices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/files.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/users_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="80" column="40" lean-forward="true" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/routes/apps_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/routes/commands_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/commands_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/addNotifications.js" />
+    <entry file="file://$PROJECT_DIR$/api/routes/messages_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/addSms.js" />
+    <entry file="file://$PROJECT_DIR$/api/routes/contacts_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/contacts_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/contactListController.js" />
+    <entry file="file://$PROJECT_DIR$/api/models/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/routes/notifications_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/routes/auth_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/notifications_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/messages_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-530">
+          <caret line="0" column="47" lean-forward="true" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/filesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../printstyle/CSS/stylepublic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/routes/upload_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/if.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="66" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/upload_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="630">
+          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/userController.js">
+    <entry file="file://$PROJECT_DIR$/api/models/commands.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="40" column="57" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="57" />
+        <state relative-caret-position="30">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/test.js">
+    <entry file="file://$PROJECT_DIR$/api/controllers/uploader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="315">
+          <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/actionsController.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="412">
+          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
           <folding />
         </state>
       </provider>

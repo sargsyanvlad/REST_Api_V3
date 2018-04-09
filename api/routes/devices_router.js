@@ -1,4 +1,4 @@
-const devicesCtrl = require('../../controllers/devices_controller');
+const devicesCtrl = require('../controllers/devices_controller');
 
 module.exports = function (app) {
     //Device router for creating new device in DB

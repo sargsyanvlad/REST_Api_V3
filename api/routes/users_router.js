@@ -1,5 +1,5 @@
 module.exports = function (app) {
-    const userCtrl = require('../../controllers/users_controller');
+    const userCtrl = require('../controllers/users_controller');
 
     // User Routes to signUp
     app.route('/signup')

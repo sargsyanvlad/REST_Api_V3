@@ -2,7 +2,7 @@
 // let router = express.Router();
 // let bodyParser = require('body-parser');
 // router.use(bodyParser.json());
-const config = require('../config/database');
+const config = require('../../config/database');
 const jwt = require('jsonwebtoken');
 const User = require('../models/users');
 

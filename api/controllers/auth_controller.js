@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const config = require('../config/database');
+const config = require('../../config/database');
 const User = require('../models/users');
 
 //authenticator path

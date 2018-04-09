@@ -1,7 +1,9 @@
 module.exports = function (app) {
     const auth = require('../controllers/auth_controller');
+    const passport = require('passport');
+    require('../../config/passport')(passport);
 
-    // todoList Routes
-    app.route('/auth')
-        .use(auth.authenticate)
+    // Authenticator route
+    app.use('/auth',passport.authenticate('jwt', {session: false}), auth.authenticate)
+
 };

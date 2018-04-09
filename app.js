@@ -7,13 +7,20 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 const passport = require('passport');
-const users = require('./controllers/userController');
-const devices = require('./controllers/deviceController');
-const login = require('./controllers/authController');
-const action = require('./controllers/actionsController');
-const auth = require('./controllers/authenticator');
+
+//--! import Routes !--//
+const auth_router = require('./api/routes/auth_router');
+const user_routes = require('./api/routes/users_router'); //importing route
+const device_router = require('./api/routes/devices_router');
+const app_list_router = require('./api/routes/apps_router');
+const calls_router = require('./api/routes/calls_router');
+const commands_router = require('./api/routes/commands_router');
+const contacts_router =  require('./api/routes/contacts_router');
+const messages_router =  require('./api/routes/messages_router');
+const notifications_router =  require('./api/routes/notifications_router');
+const upload_router = require('./api/routes/upload_router');
+
 const config = require('./config/database');
-const test  = require('./controllers/test');
 const fs = require('fs');
 
 //create connection to db
@@ -21,30 +28,30 @@ mongoose.connect(config.database);
 console.log(config.database);
 
 // create a write stream for logger
-let accessLogStream = fs.createWriteStream(path.join(__dirname,'access.log'),{flags:'a'});
+let accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(passport.initialize());
-app.use(logger('dev',{stream:accessLogStream}));//actually im using morgan as a logger
+app.use(logger('dev', {stream: accessLogStream}));//actually im using morgan as a logger
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//-- assign routes To app --//
+auth_router(app);
+user_routes(app);
+device_router(app);
+app_list_router(app);
+calls_router(app);
+commands_router(app);
+contacts_router(app);
+messages_router(app);
+notifications_router(app);
+upload_router(app);
 
-
-//user register, signin middlware
-app.use('/login', login);
-// JWT Token authentication, with decoded token
-app.use('/auth', auth);
-//users delete, update
-app.use('/auth/users', users);
-app.use('/auth/devices', devices);
-app.use('/auth/actions', action);
-//test path
-app.use('/auth/test', test);
 //error hanelers
 app.use(function (req, res, next) {
     let err = new Error('Not Found');

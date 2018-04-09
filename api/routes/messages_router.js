@@ -1,11 +1,11 @@
 module.exports = function (app) {
-    const appCtrl = require('../../controllers/apps_controller');
-    app.route('/applist')
-        .post(appCtrl.save_apps);
+    const msgCtrl = require('../controllers/messages_controller');
+    app.route('/messages')
+        .post(msgCtrl.save_messages);
 
-    app.route('/auth/applist')
-        .get(appCtrl.get_apps);
+    app.route('/auth/messages')
+        .get(msgCtrl.get_messages);
 
-    app.route('/auth/applist/:id')
-        .get(appCtrl.get_apps_byID);
+    app.route('/auth/messages/:id')
+        .get(msgCtrl.get_messages_byID);
 };

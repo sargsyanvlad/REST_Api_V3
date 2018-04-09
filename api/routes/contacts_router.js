@@ -1,11 +1,11 @@
 module.exports = function (app) {
-    const callCtrl = require('../../controllers/calls_controller');
-    app.route('/calls')
-        .post(callCtrl.save_calls);
+    const contactsCtrl = require('../controllers/contacts_controller');
+    app.route('/contacts')
+        .post(contactsCtrl.save_contacts);
 
-    app.route('/auth/calls')
-        .get(callCtrl.get_calls);
+    app.route('/auth/contacts')
+        .get(contactsCtrl.get_contacts);
 
-    app.route('/auth/calls/:id')
-        .get(callCtrl.get_calls_byID);
+    app.route('/auth/contacts/:id')
+        .get(contactsCtrl.get_contacts_byID);
 };

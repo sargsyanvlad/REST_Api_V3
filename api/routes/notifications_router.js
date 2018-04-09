@@ -1,11 +1,11 @@
 module.exports = function (app) {
-    const notificationsCtrl = require('../../controllers/apps_controller');
+    const notificationsCtrl = require('../controllers/notifications_controller');
     app.route('/notifications')
-        .post(notificationsCtrl.save_apps);
+        .post(notificationsCtrl.save_notifications);
 
     app.route('/auth/notifications')
-        .get(notificationsCtrl.get_messages);
+        .get(notificationsCtrl.get_notifications);
 
     app.route('/auth/notifications/:id')
-        .get(notificationsCtrl.get_messages_byID);
+        .get(notificationsCtrl.get_notifications_byID);
 };

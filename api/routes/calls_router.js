@@ -1,5 +1,5 @@
 module.exports = function (app) {
-    const callCtrl = require('../../controllers/calls_controller');
+    const callCtrl = require('../controllers/calls_controller');
     app.route('/calls')
         .post(callCtrl.save_calls);
 

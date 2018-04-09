@@ -1,4 +1,4 @@
-const Calls = require("../models/Calls");
+const Calls = require("../models/calls");
 
 
 // post --> save Calls
