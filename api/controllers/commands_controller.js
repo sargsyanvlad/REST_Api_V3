@@ -2,48 +2,48 @@ const Commands = require("../models/commands");
 
 
 // post --> Send commands to device
-exports.send_commands = function (req, res) {
+exports.send_commands = async function (req, res) {
 
     let newCommands = new Commands({
         ...req.body,
         deviceId: req.params.id
     });
 
-    newCommands.save(function (err) {
-        if (err) {
-            console.log(err);
-            return res.send(400, {success: false, msg: 'Save Commands failed.'})
-        }
-        res.send(201, {success: true, msg: 'Successful created new Commands List.'})
-    });
+    await newCommands.save().catch( err => res.send(400,{ err:err.errmsg } ));
+
+    res.send(200, {success: true, msg: 'Successful created new Commands List.'})
 };
 
-//get request /deviceId --> get commands lits by Device Id
-exports.get_commands = function (req, res) {
+// get request /deviceId --> get commands lits by Device Id
+exports.get_commands = async function (req, res) {
 
-    Commands.findOne({deviceId: req.params.id}, function (err, commands) {
-        if (err) return res.send(500, {msg: "There was a problem finding commands List."});
+    let commands = await Commands.findOne({deviceId: req.params.id}).catch(err => err);
 
-        if (!commands || commands.commands.length === 0) {
-            res.send('Commands List not found');
-        }
-        // let data = {commands:{}};
-        res.send(200, commands.commands);
+    if (!commands || commands.commands.length < 1) {
+        res.send(400, {success: false, msg: 'Commands not found'})
+    }
 
-        Commands.update({deviceId: req.params.id}, {commands: []}, {new: true}, function (err, data) {
-            if (err) throw err;
-        })
+    res.send(200, commands.commands);
 
-    })
+    await Commands.update({deviceId: req.params.id}, {commands: []}, {new: true}).catch(err => err);
 };
-exports.update_commands = function (req, res) {
+
+exports.update_commands = async function (req, res) {
 
     let newCommands = req.body.commands;
 
-    Commands.findOneAndUpdate({deviceId: req.params.id}, {$addToSet: {commands: newCommands}}, function (err, data) {
-        if (err) throw err;
-        else res.send(200, {msg: 'Success'});
-    })
+    let dbCommands = await Commands.findOne({deviceId: req.params.id}).select('-_id commands');
+
+    if (!dbCommands) {
+        res.status(400).send({msg:'Commands not found'});
+    }
+
+    await newCommands.map((x) => {
+        if (!dbCommands.commands.includes(x)) {
+            dbCommands.commands.push(x);
+        }
+    });
+
+    let data = await Commands.update({deviceId: req.params.id}, {commands: dbCommands.commands}, {new: true}).catch(err => err);
+    res.send(200, data);
 };
-
-
