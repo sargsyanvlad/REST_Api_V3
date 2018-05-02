@@ -7,8 +7,8 @@ let contactSchema = new Schema({
         default: Date.now,
         required: true
     },
-    contacts: {
-        type: JSON,
+    data: {
+        type: Object,
         required: true
     },
     deviceId: {

@@ -7,10 +7,12 @@ let callSchema = new Schema({
         default: Date.now,
         required: true
     },
-    calls :{
-        type: JSON,
+
+    data :{
+        type: Object,
         required: true
     },
+
     deviceId:
         {
             unique: true,

@@ -6,8 +6,8 @@ let appSchema = new Schema({
         default: Date.now,
         required: true
     },
-    apps: {
-        type: JSON,
+    data: {
+        type: Object,
         appStatus: String,
         required: true
     },

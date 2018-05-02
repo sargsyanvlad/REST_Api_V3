@@ -1,5 +1,5 @@
 const Contacts = require("../models/contacts");
-
+const mongoose = require('mongoose');
 
 // post --> save Contacts
 exports.save_contacts = async (req, res) => {
@@ -18,7 +18,7 @@ exports.save_contacts = async (req, res) => {
 };
 
 //get request --> get Contacts
-exports.get_contacts = async (req, res) =>{
+exports.get_contacts = async (req, res) => {
     let user = res.locals.users;
     if (user.role === 'admin') {
         Contacts.find({}, function (err, contacts) {
@@ -36,17 +36,24 @@ exports.get_contacts = async (req, res) =>{
 };
 
 //get request /deviceId --> get Contacts by Device Id
-exports.get_contacts_byID = async  (req, res) => {
+exports.get_contacts_byID = async (req, res) => {
     let user = res.locals.users;
+    let id = req.params.id;
+
+    if (!await mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(400).send({success: false, msg: 'Please send valid Id'})
+    }
+
     if (user.role === 'admin') {
-        Contacts.findOne({deviceId: req.params.id}, function (err, contacts) {
-            if (err) {
-                return res.send(500, {msg: "There was a problem finding Contacts."});
-            }
+        let contacts =  await Contacts.findOne({deviceId: id}).select('data - _id')
+            .catch(err => {
+                return res.status(400).send({msg: err.errmsg})
+            });
+
             if (!contacts) {
                 res.send('Contacts not found');
             }
-            else res.send(200, contacts.contactList);
-        })
+
+            else res.status(200).send(contacts);
     }
 };

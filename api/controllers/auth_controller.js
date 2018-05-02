@@ -5,6 +5,7 @@ const User = require('../models/users');
 //authenticator path
 exports.authenticate = async (req, res, next) => {
     let token = await getToken(req.headers);
+
     if (!token) {
         res.status(204).json({success: false, msg: "unautorized"});
         next();

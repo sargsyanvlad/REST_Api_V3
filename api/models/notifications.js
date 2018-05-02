@@ -6,8 +6,8 @@ let notificationsSchema = new Schema({
         default: Date.now,
         required: true
     },
-    notifications: {
-        type: JSON,
+    data: {
+        type: Object,
         required: true
     },
     deviceId:
