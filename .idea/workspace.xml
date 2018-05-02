@@ -3,24 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d82bf431-94a9-4fbf-b912-818bbe91854e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/access.log" afterPath="$PROJECT_DIR$/access.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/apps_controller.js" afterPath="$PROJECT_DIR$/api/controllers/apps_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/auth_controller.js" afterPath="$PROJECT_DIR$/api/controllers/auth_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/calls_controller.js" afterPath="$PROJECT_DIR$/api/controllers/calls_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/commands_controller.js" afterPath="$PROJECT_DIR$/api/controllers/commands_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/contacts_controller.js" afterPath="$PROJECT_DIR$/api/controllers/contacts_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/messages_controller.js" afterPath="$PROJECT_DIR$/api/controllers/messages_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/apps.js" afterPath="$PROJECT_DIR$/api/models/apps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/calls.js" afterPath="$PROJECT_DIR$/api/models/calls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/contacts.js" afterPath="$PROJECT_DIR$/api/models/contacts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/messages.js" afterPath="$PROJECT_DIR$/api/models/messages.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/notifications.js" afterPath="$PROJECT_DIR$/api/models/notifications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/apps_router.js" afterPath="$PROJECT_DIR$/api/routes/apps_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/calls_router.js" afterPath="$PROJECT_DIR$/api/routes/calls_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/messages_router.js" afterPath="$PROJECT_DIR$/api/routes/messages_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/if.js" afterPath="$PROJECT_DIR$/if.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/helpers/dataUpdate.js" afterPath="$PROJECT_DIR$/libs/helpers/dataUpdate.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -483,7 +465,7 @@
       <workItem from="1524729919818" duration="958000" />
       <workItem from="1524751557781" duration="517000" />
       <workItem from="1524810267756" duration="4020000" />
-      <workItem from="1525008952136" duration="6699000" />
+      <workItem from="1525008952136" duration="6835000" />
     </task>
     <task id="LOCAL-00001" summary="commite message">
       <created>1518279762953</created>
@@ -496,7 +478,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342930000" />
+    <option name="totallyTimeSpent" value="343066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
