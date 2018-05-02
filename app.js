@@ -15,9 +15,9 @@ const device_router = require('./api/routes/devices_router');
 const app_list_router = require('./api/routes/apps_router');
 const calls_router = require('./api/routes/calls_router');
 const commands_router = require('./api/routes/commands_router');
-const contacts_router =  require('./api/routes/contacts_router');
-const messages_router =  require('./api/routes/messages_router');
-const notifications_router =  require('./api/routes/notifications_router');
+const contacts_router = require('./api/routes/contacts_router');
+const messages_router = require('./api/routes/messages_router');
+const notifications_router = require('./api/routes/notifications_router');
 const upload_router = require('./api/routes/upload_router');
 
 const config = require('./config/database');
@@ -40,6 +40,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 //-- assign routes To app --//
 auth_router(app);
 user_routes(app);
@@ -52,6 +54,7 @@ messages_router(app);
 notifications_router(app);
 upload_router(app);
 
+
 //error hanelers
 app.use(function (req, res, next) {
     let err = new Error('Not Found');
@@ -59,17 +62,13 @@ app.use(function (req, res, next) {
     next(err);
 });
 
-app.use(function (err, req, res, next) {
-    if (err){
-        // set locals, only providing error in development
-        res.locals.message = err.message;
-        res.locals.error = req.app.get('env') === 'development' ? err : {};
-        // render the error page
-        res.status(err.status || 500);
-        res.render('error');
+app.use(async (req, res, next) => {
+    try {
+        await next();
+    } catch (err) {
+        console.log('Error handler', err);
+        res.status( err.statusCode || err.status || 500).send({error: err.message || err});
     }
-    else next();
 });
 
-app.listen(8080, "127.0.0.1");
 module.exports = app;

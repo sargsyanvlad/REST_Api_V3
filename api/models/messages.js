@@ -6,7 +6,7 @@ let smsSchema = new Schema({
         default: Date.now,
         required: true
     },
-    messages: {
+    data: {
         type: Array,
         required: true
     },
