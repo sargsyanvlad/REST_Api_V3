@@ -37,4 +37,7 @@ files/
 public/
 config/
 bin/
+tests/
 node_modules/
+if.js
+access.log
