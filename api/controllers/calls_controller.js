@@ -56,16 +56,16 @@ exports.get_calls = async (req, res) => {
     let user = res.locals.users; //TODO logic should be changed, we should find user from db, and chek if user role admin or not
     if (user.role === 'admin') {
         Calls.find({}, function (err, calls) {
-            if (err) return res.send(500, {msg: "There was a problem finding Calls."});
+            if (err) return res.status(500).send({msg: "There was a problem finding Calls."});
 
             if (!calls) {
-                res.send('Calls not found');
+                res.status(400).send('Calls not found');
             }
 
-            else res.send(200, calls);
+            else res.status(200).send(calls);
         });
     } else {
-        res.send(401, {success: false, msg: 'You are not Admin'})
+        res.status(401).send({success: false, msg: 'You are not Admin'})
     }
 };
 
@@ -81,14 +81,14 @@ exports.get_calls_byID = async (req, res) => {
     if (user.role === 'admin') { // TODO logic should be changed, we should find user from db, and chek if user role admin or not
         Calls.findOne({deviceId: id}, function (err, calls) {
             if (err) {
-                return res.send(500, {msg: "There was a problem finding Calls."});
+                return res.status(500).send({msg: "There was a problem finding Calls."});
             }
 
             if (!calls) {
-                return res.send('Calls not found');
+                return res.status(400).send('Calls not found');
             }
 
-            else res.send(200, calls);
+            else res.status(200).send(calls);
         })
     }
 };

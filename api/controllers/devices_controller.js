@@ -9,9 +9,9 @@ exports.saveDevice = async function (req, res) {
     newDevice.save(function (err) {
         if (err) {
             console.log(err);
-            return res.send(400, {success: false, msg: 'Save Device failed. Device ID Already exists'})
+            return res.status(400).send({success: false, msg: 'Save Device failed. Device ID Already exists'});
         }
-        res.send(201, {success: true, msg: 'Successful created new Device.'})
+        res.status(201).send({success: true, msg: 'Successful created new Device.'});
     });
 };
 
@@ -22,12 +22,12 @@ exports.getDevices = async function (req, res) {
         Device.find({}, function (err, devices) {
             if (err) throw err;
             else if (!devices) {
-                res.send({msg: "No Devices found"})
+                res.status(400).send({msg: "No Devices found"})
             }
             else res.status(200).send(devices);
         });
     }
-    else res.send(403, {success: false, msg: "You are not admin"});
+    else res.status(403).send({success: false, msg: "You are not admin"});
 };
 //get request /:id --> get Device by id
 exports.getDeviceByID = async function (req, res) {
@@ -37,12 +37,12 @@ exports.getDeviceByID = async function (req, res) {
             function (err, device) {
                 if (err) throw err;
                 if (device) {
-                    res.send(200, device);
+                    res.status(200).send(device);
                 } else {
-                    return res.send(401, {message: 'Device Not found'});
+                    return res.status(401).send({message: 'Device Not found'});
                 }
             })
-    } else res.send(403, {success: false, msg: "You are not admin"})
+    } else res.status(403).send({success: false, msg: "You are not admin"})
 };
 //put request /:id --> update Device by id
 exports.updateDevice = async function (req, res) {
@@ -54,14 +54,14 @@ exports.updateDevice = async function (req, res) {
                     Device.findByIdAndUpdate(req.params.id, {
                         deviceType: req.body.deviceType
                     }, {new: true}, function (err) {
-                        if (err) res.send(err);
-                        else res.json(200, {success: true, msg: 'Success'});
+                        if (err) res.status(500).send(err);
+                        else res.status(200).send({success: true, msg: 'Success'});
                     });
                 } else {
-                    return res.send(401, {message: 'Device Not found'});
+                    return res.status(401).send({message: 'Device Not found'});
                 }
             })
-    } else res.send(403, {success: false, msg: "You are not admin"})
+    } else res.status(403).send({success: false, msg: "You are not admin"})
 };
 
 //delete request /:id --> delete device by id
@@ -71,11 +71,11 @@ exports.deleteDevice = async function (req, res) {
         Device.findByIdAndRemove(req.params.deviceId, function (err, devic) {
             if (err) throw err;
             if (!device) {
-                res.send({message: "Device not found"})
+                res.status(400).send({message: "Device not found"})
             }
-            else res.send(200, {success: true, msg: 'Success'});
+            else res.status(200).send({success: true, msg: 'Success'});
         });
     } else {
-        res.send(401, {success: false, msg: 'You are not Admin'})
+        res.status(401).send({success: false, msg: 'You are not Admin'})
     }
 };

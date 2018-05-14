@@ -17,14 +17,14 @@ exports.save_files = async function (req, res) {
         if (err) return err;
 
     });
-    res.send(200, {success: true, msg: "File uploaded successfully"});
+    res.status(200).send({success: true, msg: "File uploaded successfully"});
 };
 
 exports.get_files = async function (req, res) {
     await getFiles((err, genres) => {
-        if (err) res.send(400, {msg: 'Files Not found'});
+        if (err) res.status(400).send({msg: 'Files Not found'});
         else {
-            res.send(genres);
+            res.status(200).send(genres);
         }
     })
 };
@@ -33,9 +33,9 @@ exports.get_device_files = async function (req, res) {
     let deviceId = req.params.id;
     await getDeviceFiles(deviceId, (err, genres) => {
         if (err || !genres) {
-            res.send(400, {msg: 'Files Not found'})
+            res.status(400).send({msg: 'Files Not found'})
         } else {
-            res.send(genres);
+            res.status(200).send(genres);
         }
     })
 };
@@ -44,7 +44,7 @@ exports.get_file_byId = async function (req, res) {
     let deviceId = req.params.id;
     await getFileById(deviceId, (err, genres) => {
         if (err || !genres) {
-            res.send(400, {msg: 'Files Not found'})
+            res.status(400).send({msg: 'Files Not found'})
         } else {
             res.download(genres.path);
         }

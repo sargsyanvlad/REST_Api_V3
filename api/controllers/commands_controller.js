@@ -14,9 +14,9 @@ exports.send_commands = async (req, res) => {
         deviceId: id
     });
 
-    await newCommands.save().catch(err => res.send(400, {err: err.errmsg}));
+    await newCommands.save().catch(err => res.status(400).send({err: err.errmsg}));
 
-    res.send(200, {success: true, msg: 'Successful created new Commands List.'})
+    res.status(200).send({success: true, msg: 'Successful created new Commands List.'})
 };
 
 // get request /deviceId --> get commands lits by Device Id
@@ -30,10 +30,10 @@ exports.get_commands = async function (req, res) {
     let commands = await Commands.findOne({deviceId: id}).catch(err => err);
 
     if (!commands || commands.commands.length < 1) {
-        res.send(400, {success: false, msg: 'Commands not found'})
+        res.status(400).send({success: false, msg: 'Commands not found'})
     }
 
-    res.send(200, commands.commands);
+    res.status(200).send(commands.commands);
 
     await Commands.update({deviceId: id}, {commands: []}, {new: true}).catch(err => err);
 };

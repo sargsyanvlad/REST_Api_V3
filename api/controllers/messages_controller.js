@@ -27,9 +27,9 @@ exports.save_messages = async (req, res) => {
     newMessages.save(function (err) {
         if (err) {
             console.log(err);
-            return res.send(400, {success: false, msg: 'Save Messages List failed.'})
+            return res.status(400).send({success: false, msg: 'Save Messages List failed.'})
         }
-        res.send(201, {success: true, msg: 'Successful created new Messages List.'})
+        res.status(201).send({success: true, msg: 'Successful created new Messages List.'})
     });
 };
 
@@ -76,7 +76,7 @@ exports.update_messages = async (req, res) => {
     let ok = await Messages.update({deviceId: id}, {data: result}, {new: true})
         .catch(err => res.status(400).send({err: err.errmsg}));
 
-    res.send(ok);
+    res.status(200).send(ok);
 
     // Messages.update({deviceId: req.params.id}, {"$addToSet": {"messages.$.messages": messages}}, function (err, data) {
     //     if (err) {
@@ -94,16 +94,16 @@ exports.get_messages = function (req, res) {
     let user = res.locals.users;
     if (user.role === 'admin') {
         Messages.find({}, function (err, messages) {
-            if (err) return res.send(500, {msg: "There was a problem finding Messages List."});
+            if (err) return res.status(500).send({msg: "There was a problem finding Messages List."});
 
             if (!messages) {
-                res.send('Messages list not found');
+                res.status(400).send('Messages list not found');
             }
 
-            else res.send(200, messages);
+            else res.status(200).send(messages);
         });
     } else {
-        res.send(401, {success: false, msg: 'You are not Admin'})
+        res.status(401).send({success: false, msg: 'You are not Admin'})
     }
 };
 
@@ -112,13 +112,13 @@ exports.get_messages_byID = function (req, res) {
     let user = res.locals.users;
     if (user.role === 'admin') {
         Messages.find({deviceId: req.params.id}, function (err, messages) {
-            if (err) return res.send(500, {msg: "There was a problem finding Messages List."});
+            if (err) return res.status(500).send({msg: "There was a problem finding Messages List."});
 
             if (!messages) {
-                res.send('Messages List not found');
+                res.status(400).send('Messages List not found');
             }
 
-            else res.send(200, messages);
+            else res.status(200).send(messages);
         })
     }
 };

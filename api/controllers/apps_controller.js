@@ -83,7 +83,7 @@ exports.get_apps_byID = async (req, res) => {
 
     if (user.role === 'admin') {
 
-        let appList = await Apps.findOne({deviceId: id}).catch(err => res.send(400, {msg: err.errmsg}));
+        let appList = await Apps.findOne({deviceId: id}).catch(err => res.status(400).send({msg: err.errmsg}));
 
         if (!appList) {
             res.status(400).send({msg: 'App list not found'});

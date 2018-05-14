@@ -11,9 +11,9 @@ exports.save_contacts = async (req, res) => {
     newContacts.save(function (err) {
         if (err) {
             console.log(err);
-            return res.send(400, {success: false, msg: 'Save Contacts failed.'})
+            return res.status(400).send({success: false, msg: 'Save Contacts failed.'})
         }
-        res.send(201, {success: true, msg: 'Successful created new Contacts.'})
+        res.status(201).send({success: true, msg: 'Successful created new Contacts.'})
     });
 };
 
@@ -22,16 +22,16 @@ exports.get_contacts = async (req, res) => {
     let user = res.locals.users;
     if (user.role === 'admin') {
         Contacts.find({}, function (err, contacts) {
-            if (err) return res.send(500, {msg: "There was a problem finding Contacts."});
+            if (err) return res.status(500).send({msg: "There was a problem finding Contacts."});
 
             if (!contacts) {
-                res.send('Contacts not found');
+                res.status(400).send('Contacts not found');
             }
 
-            else res.send(200, contacts);
+            else res.status(200).send(contacts);
         });
     } else {
-        res.send(401, {success: false, msg: 'You are not Admin'})
+        res.status(401).send({success: false, msg: 'You are not Admin'})
     }
 };
 
@@ -51,7 +51,7 @@ exports.get_contacts_byID = async (req, res) => {
             });
 
             if (!contacts) {
-                res.send('Contacts not found');
+                res.status(400).send('Contacts not found');
             }
 
             else res.status(200).send(contacts);

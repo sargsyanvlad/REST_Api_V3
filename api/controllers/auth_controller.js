@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const config = require('../../config/database');
+const config = require('config');
 const User = require('../models/users');
 
 //authenticator path
@@ -11,18 +11,18 @@ exports.authenticate = async (req, res, next) => {
         next();
     }
 
-    let decoded = jwt.decode(token, config.secret);
+    let decoded = jwt.decode(token, config.get('jwt.secret'));
     User.findOne({username: decoded.username},
         function (err, user) {
             if (err) {
-                res.send(202, {success: false, msg: "Some Debil Error"});
+                res.status(202).send({success: false, msg: "Some Debil Error"});
             }
             if (user) {
                 res.locals.users = user;
                 next();
             } else {
-                return res.send(501,
-                    {
+                return res.status(501)
+                    .send({
                         msg: 'User Not found'
                     });
             }

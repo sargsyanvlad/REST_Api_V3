@@ -21,16 +21,16 @@ exports.get_notifications = function (req, res) {
     let user = res.locals.users;
     if (user.role === 'admin') {
         Notifications.find({}, function (err, notifications) {
-            if (err) return res.send(500, {msg: "There was a problem finding notifications List."});
+            if (err) return res.status(500).send( {msg: "There was a problem finding notifications List."});
 
             if (!notifications) {
-                res.send('notifications list not found');
+                res.status(400).send('notifications list not found');
             }
 
-            else res.send(200, notifications);
+            else res.status(200).send(notifications);
         });
     } else {
-        res.send(401, {success: false, msg: 'You are not Admin'})
+        res.status(401).send({success: false, msg: 'You are not Admin'})
     }
 };
 
@@ -38,13 +38,13 @@ exports.get_notifications_byID = function (req, res) {
     let user = res.locals.users;
     if (user.role === 'admin') {
         Notifications.find({deviceId: req.params.id}, function (err, notifications) {
-            if (err) return res.send(500, {msg: "There was a problem finding notifications List."});
+            if (err) return res.status(500).send({msg: "There was a problem finding notifications List."});
 
             if (!notifications) {
-                res.send('notifications List not found');
+                res.status(400).send('notifications List not found');
             }
 
-            else res.send(200, notifications);
+            else res.status(200).send(notifications);
         })
     }
 };

@@ -1,4 +1,5 @@
 const express = require('express');
+const config = require('config');
 const app = express();
 const path = require('path');
 const logger = require('morgan');
@@ -7,7 +8,6 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 const passport = require('passport');
-
 //--! import Routes !--//
 const auth_router = require('./api/routes/auth_router');
 const user_routes = require('./api/routes/users_router'); //importing route
@@ -20,26 +20,31 @@ const messages_router = require('./api/routes/messages_router');
 const notifications_router = require('./api/routes/notifications_router');
 const upload_router = require('./api/routes/upload_router');
 
-const config = require('./config/database');
 const fs = require('fs');
-
+let ip;
 //create connection to db
-mongoose.connect(config.database);
-console.log(config.database);
+
+mongoose.connect(config.get('db.db'));
+// app.use('/',(req,res,next)=>{
+//     "use strict";
+//     ip = req.connection.remoteAddress;
+//     next();
+// });
+//
+// logger.token('ip', function getIp (req) {
+//     return ip;
+// });
 
 // create a write stream for logger
 let accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'});
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
 app.use(passport.initialize());
-app.use(logger('dev', {stream: accessLogStream}));//actually im using morgan as a logger
+// app.use(logger('dev,ip,:id,:method,:url,:response-time', {stream: accessLogStream}));
+app.use(logger( 'default',{stream: accessLogStream}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
 
 
 //-- assign routes To app --//
