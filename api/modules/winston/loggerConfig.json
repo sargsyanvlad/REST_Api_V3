@@ -1,0 +1,12 @@
+{
+  "info": {
+    "name": "info-file",
+    "filename": "logs/filelog-info.log",
+    "level": "info"
+  },
+  "error": {
+    "name": "error-file",
+    "filename": "logs/filelog-error.log",
+    "level": "error"
+  }
+}
