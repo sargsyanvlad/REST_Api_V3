@@ -5,7 +5,7 @@ const appRoot = require('app-root-path');
 const winston = require('winston');
 const moment = require('moment');
 
-const config = require(`${appRoot}/app/modules/winston/loggerConfig.json`);
+const config = require(`${appRoot}/api/modules/winston/loggerConfig.json`);
 
 // winston.transports.DailyRotateFile = require('winston-daily-rotate-file');
 
