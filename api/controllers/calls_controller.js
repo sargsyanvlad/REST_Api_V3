@@ -53,7 +53,7 @@ exports.update_calls = async (req, res) => {
 
 //get request --> get Calls
 exports.get_calls = async (req, res) => {
-    let user = res.locals.users; //TODO logic should be changed, we should find user from db, and chek if user role admin or not
+    let user = res.locals.users;
     if (user.role === 'admin') {
         Calls.find({}, function (err, calls) {
             if (err) return res.status(500).send({msg: "There was a problem finding Calls."});
@@ -78,7 +78,7 @@ exports.get_calls_byID = async (req, res) => {
         return res.status(400).send({success: false, msg: 'Please send valid Id'})
     }
 
-    if (user.role === 'admin') { // TODO logic should be changed, we should find user from db, and chek if user role admin or not
+    if (user.role === 'admin') {
         Calls.findOne({deviceId: id}, function (err, calls) {
             if (err) {
                 return res.status(500).send({msg: "There was a problem finding Calls."});

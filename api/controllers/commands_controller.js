@@ -40,7 +40,11 @@ exports.get_commands = async function (req, res) {
 
 exports.update_commands = async function (req, res) {
 
-    let newCommands = req.body.commands; //TODO validate commands
+    let newCommands = req.body.commands;
+
+    if (!Array.isArray(newCommands)) {
+        return res.status(400).send({success: false, msg: 'Please send valid Commands, Commands Should be in array'});
+    }
 
     let id = req.params.id;
 
@@ -63,8 +67,12 @@ exports.update_commands = async function (req, res) {
     let ok = await Commands.update({deviceId: req.params.id}, {commands: dbCommands.commands}, {new: true})
         .catch(err => res.status(400).send({err: err.errmsg}));
 
-    //TODO check updated or not
-
-    res.status(200).send(ok);
+    if (ok instanceof Error) {
+        return res.status(400).send({ success: false, msg: 'Error Updateing commands' });
+    } else if (!ok) {
+        return res.send(400).send({ success: false, msg: 'Commands not updated' })
+    } else {
+        res.status(200).send(ok);
+    }
 
 };

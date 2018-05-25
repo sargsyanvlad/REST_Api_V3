@@ -53,7 +53,7 @@ exports.update_apps = async (req, res) => {
 exports.get_apps = async function (req, res) {
     let user = res.locals.users;
 
-    if (user.role === 'admin') { //TODO : we should change logic, should find logged user from db, and check if user is admin or not
+    if (user.role === 'admin') {
         console.log(user.role);
         let appList = await Apps.find({})
             .select('appList deviceId')

@@ -32,6 +32,7 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+#other files and folders
 files/
 .idea/
 public/
@@ -41,4 +42,5 @@ tests/
 node_modules/
 if.js
 access.log
-package-
+.idea/workspace.xml
+package-lock.json
