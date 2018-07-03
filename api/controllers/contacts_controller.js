@@ -4,14 +4,24 @@ const mongoose = require('mongoose');
 // post --> save Contacts
 exports.save_contacts = async (req, res) => {
 
+    let id = req.params.id;
+
+    if (!await mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(258).send({success: false, msg: 'Please send valid Id'})
+    }
+
     let newContacts = new Contacts({
         ...req.body,
+        deviceId: id
     });
 
     newContacts.save(function (err) {
         if (err) {
             console.log(err);
-            return res.status(258).send({success: false, msg: `Error Name:${err.name} 'Save Contacts failed.' Error: ${err.message}`})
+            return res.status(258).send({
+                success: false,
+                msg: `Error Name:${err.name} 'Save Contacts failed.' Error: ${err.message}`
+            })
         }
         res.status(201).send({success: true, msg: 'Successful created new Contacts.'})
     });
@@ -45,15 +55,15 @@ exports.get_contacts_byID = async (req, res) => {
     }
 
     if (user.role === 'admin') {
-        let contacts =  await Contacts.findOne({deviceId: id}).select('data - _id')
+        let contacts = await Contacts.findOne({deviceId: id}).select('data - _id')
             .catch(err => {
                 return res.status(258).send({msg: err.errmsg})
             });
 
-            if (!contacts) {
-                res.status(258).send('Contacts not found');
-            }
+        if (!contacts) {
+            res.status(258).send('Contacts not found');
+        }
 
-            else res.status(200).send(contacts);
+        else res.status(200).send(contacts);
     }
 };

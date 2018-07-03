@@ -14,7 +14,7 @@ let contactSchema = new Schema({
     deviceId: {
             type: Schema.Types.ObjectId,
             ref: "Device",
-            unique: true,
+            unique: false,
             required: true
         }
 });

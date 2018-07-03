@@ -1,6 +1,6 @@
 module.exports = function (app) {
     const contactsCtrl = require('../controllers/contacts_controller');
-    app.route('/contacts')
+    app.route('/contacts/:id')
         .post(contactsCtrl.save_contacts);
 
     app.route('/auth/contacts')
