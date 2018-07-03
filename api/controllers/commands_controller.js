@@ -35,7 +35,7 @@ exports.get_commands = async function (req, res) {
 
     res.status(200).send(commands.commands);
 
-    await Commands.update({deviceId: id}, {commands: []}, {new: true}).catch(err => err);
+    Commands.update({deviceId: id}, {commands: []}).catch(err => err);
 };
 
 exports.update_commands = async function (req, res) {

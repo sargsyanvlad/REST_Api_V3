@@ -55,7 +55,7 @@ exports.get_contacts_byID = async (req, res) => {
     }
 
     if (user.role === 'admin') {
-        let contacts = await Contacts.findOne({deviceId: id}).select('data - _id')
+        let contacts = await Contacts.find({deviceId: id}).select('data')
             .catch(err => {
                 return res.status(258).send({msg: err.errmsg})
             });
