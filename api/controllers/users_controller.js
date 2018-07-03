@@ -21,7 +21,7 @@ exports.signup = (req, res) => {
         newUser.save(function (err,data) {
             if (err) {
                 console.log(err);
-                return res.status(400).send({success: false, msg: 'Username already exists.'});
+                return res.status(258).send({success: false, msg: 'Username already exists.'});
             }
             res.status(200).send({success: true, msg: 'Successful created new user.', role: req.body.role});
         });
@@ -35,7 +35,7 @@ exports.signin = function (req, res) {
         if (err) throw err;
 
         else if (!user) {
-            res.status(400).send({success: false, msg: 'User not found. '});
+            res.status(258).send({success: false, msg: 'User not found. '});
         } else {
             // check if password matches
             user.comparePassword(req.body.password, function (err, isMatch) {
@@ -45,7 +45,7 @@ exports.signin = function (req, res) {
                     // return the information including token as JSON
                     res.status(200).send({success: true, token: 'JWT ' + token});
                 } else {
-                    res.status(400).send({success: false, msg: 'Authentication failed. Wrong password.'});
+                    res.status(258).send({success: false, msg: 'Authentication failed. Wrong password.'});
                 }
             });
         }
@@ -58,7 +58,7 @@ exports.getUsers = (req, res) => {
     User.find({}, function (err, users) {
         if (err) return res.status(500).send({msg: "There was a problem finding the users."});
         if(!users){
-            return res.status(400).send({msg: "Users not found"});
+            return res.status(258).send({msg: "Users not found"});
         }
         res.status(200).send(users);
     });
@@ -68,7 +68,7 @@ exports.getUserById = (req, res) => {
     User.findOne({_id: req.params.id}, function (err, user) {
         if (err) return res.status(500).send( {msg: "Wrong query"});
         else if (!user) {
-            res.status(400).send({success: false, msg: 'User not found. '});
+            res.status(258).send({success: false, msg: 'User not found. '});
         }
         else res.status(200).send(user);
     });
@@ -82,7 +82,7 @@ exports.updateUser = (req, res) => {
         User.findByIdAndUpdate(req.params.userId, {
             ...req.body,
         }, {new: true}, function (err) {
-            if (err) res.status(400).send({msg: "Passed User Id is Wrong"});
+            if (err) res.status(258).send({msg: "Passed User Id is Wrong"});
             else res.status(200).send({success: true, msg: 'Success'});
         });
     } else {
@@ -95,7 +95,7 @@ exports.deleteUser = (req, res) => {
     let user = res.locals.users;
     if (user.role === 'admin') {
         User.findByIdAndRemove(req.params.id, function (err) {
-            if (err) res.status(400).send({msg: "User not found"});
+            if (err) res.status(258).send({msg: "User not found"});
 
             else res.status(200).send({success: true, msg: 'Success'});
         });

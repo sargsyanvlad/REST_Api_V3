@@ -7,16 +7,16 @@ exports.save_messages = async (req, res) => {
     let id = req.params.id;
 
     if (!await mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(400).send({success: false, msg: 'Please send valid Id'})
+        return res.status(258).send({success: false, msg: 'Please send valid Id'})
     }
 
     let device = await Device.findOne({deviceId: id}).select('_id')
         .catch(err => {
-            return res.status(400).send({msg: err.errmsg})
+            return res.status(258).send({msg: err.errmsg})
         });
 
     if (device instanceof Error) {
-        return res.status(400).send({msg: 'There is no Devices'});
+        return res.status(258).send({msg: 'There is no Devices'});
     }
 
     let newMessages = new Messages({
@@ -27,7 +27,7 @@ exports.save_messages = async (req, res) => {
     newMessages.save(function (err) {
         if (err) {
             console.log(err);
-            return res.status(400).send({success: false, msg: 'Save Messages List failed.'})
+            return res.status(258).send({success: false, msg: 'Save Messages List failed.'})
         }
         res.status(201).send({success: true, msg: 'Successful created new Messages List.'})
     });
@@ -41,7 +41,7 @@ exports.update_messages = async (req, res) => {
     let id = req.params.id;
 
     if (!await  mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(400).send({success: false, msg: 'Please send valid Id'});
+        return res.status(258).send({success: false, msg: 'Please send valid Id'});
     }
 
     let dbData = await Messages.findOne({deviceId: id}).select('data -_id');
@@ -74,7 +74,7 @@ exports.update_messages = async (req, res) => {
     });
 
     let ok = await Messages.update({deviceId: id}, {data: result}, {new: true})
-        .catch(err => res.status(400).send({err: err.errmsg}));
+        .catch(err => res.status(258).send({err: err.errmsg}));
 
     res.status(200).send(ok);
 
@@ -97,7 +97,7 @@ exports.get_messages = function (req, res) {
             if (err) return res.status(500).send({msg: "There was a problem finding Messages List."});
 
             if (!messages) {
-                res.status(400).send('Messages list not found');
+                res.status(258).send('Messages list not found');
             }
 
             else res.status(200).send(messages);
@@ -115,7 +115,7 @@ exports.get_messages_byID = function (req, res) {
             if (err) return res.status(500).send({msg: "There was a problem finding Messages List."});
 
             if (!messages) {
-                res.status(400).send('Messages List not found');
+                res.status(258).send('Messages List not found');
             }
 
             else res.status(200).send(messages);

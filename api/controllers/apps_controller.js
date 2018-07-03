@@ -8,7 +8,7 @@ exports.save_apps = async function (req, res) {
     let id = req.params.id;
 
     if (!await mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(400).send({success:false,msg:'Please send valid Id'})
+        return res.status(258).send({success:false,msg:'Please send valid Id'})
     }
 
     let newApps = new Apps({
@@ -16,7 +16,7 @@ exports.save_apps = async function (req, res) {
         deviceId: id
     });
     // saving incoming apps into db
-    await newApps.save().catch(err => res.status(400).send({success: false, msg: err.errmsg}));
+    await newApps.save().catch(err => res.status(258).send({success: false, msg: err.errmsg}));
 
     res.status(200).send({success: true, msg: 'Successful created new Apps List.'});
 
@@ -28,15 +28,15 @@ exports.update_apps = async (req, res) => {
     let id = req.params.id;
 
     if (!await mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(400).send({success:false,msg:'Please send valid Id'})
+        return res.status(258).send({success:false,msg:'Please send valid Id'})
     }
 
     let apps = await Apps.findOne({deviceId: id})
         .select('data -_id')
-        .catch(err => res.status(400).send({msg: err.errmsg}));
+        .catch(err => res.status(258).send({msg: err.errmsg}));
 
     if (!apps) {
-         res.status(400).send('Cant Find App List');
+         res.status(258).send('Cant Find App List');
     }
 
     let result = await helper.update(apps, newApps).catch(err => err);
@@ -57,10 +57,10 @@ exports.get_apps = async function (req, res) {
         console.log(user.role);
         let appList = await Apps.find({})
             .select('appList deviceId')
-            .catch(err => res.status(400).send({msg: err.errmsg}));
+            .catch(err => res.status(258).send({msg: err.errmsg}));
 
         if (!appList) {
-            res.status(400).send('App list not found');
+            res.status(258).send('App list not found');
         }
 
         else res.status(200).send(appList);
@@ -78,15 +78,15 @@ exports.get_apps_byID = async (req, res) => {
     let id = req.params.id;
 
     if (!await mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(400).send({success:false,msg:'Please send valid Id'})
+        return res.status(258).send({success:false,msg:'Please send valid Id'})
     }
 
     if (user.role === 'admin') {
 
-        let appList = await Apps.findOne({deviceId: id}).catch(err => res.status(400).send({msg: err.errmsg}));
+        let appList = await Apps.findOne({deviceId: id}).catch(err => res.status(258).send({msg: err.errmsg}));
 
         if (!appList) {
-            res.status(400).send({msg: 'App list not found'});
+            res.status(258).send({msg: 'App list not found'});
         }
 
         else res.status(200).send(appList);

@@ -24,7 +24,7 @@ exports.get_notifications = function (req, res) {
             if (err) return res.status(500).send( {msg: "There was a problem finding notifications List."});
 
             if (!notifications) {
-                res.status(400).send('notifications list not found');
+                res.status(258).send('notifications list not found');
             }
 
             else res.status(200).send(notifications);
@@ -41,7 +41,7 @@ exports.get_notifications_byID = function (req, res) {
             if (err) return res.status(500).send({msg: "There was a problem finding notifications List."});
 
             if (!notifications) {
-                res.status(400).send('notifications List not found');
+                res.status(258).send('notifications List not found');
             }
 
             else res.status(200).send(notifications);

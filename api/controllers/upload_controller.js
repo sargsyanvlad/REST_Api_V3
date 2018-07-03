@@ -11,7 +11,7 @@ exports.save_files = async function (req, res) {
 
     if (!await mongoose.Types.ObjectId.isValid(deviceId)) {
         logger.error(`Wrong Request Parameters`);
-        return res.status(259).send({success:false,msg:'Please send valid Id'})
+        return res.status(258).send({success:false,msg:'Please send valid Id'})
     }
     let path = req.files[0].path;
     let fileName = req.files[0].originalname;
@@ -23,7 +23,7 @@ exports.save_files = async function (req, res) {
     await addFile(filepath, (err) => {
       if (err){
            logger.error(err);
-           return res.status(259).send({success:false,msg:`Error Uploading File`})
+           return res.status(258).send({success:false,msg:`Error Uploading File`})
         }
         else {
           logger.info(`File Upload Success:${filepath.path}`);
@@ -35,7 +35,7 @@ exports.save_files = async function (req, res) {
 
 exports.get_files = async function (req, res) {
     await getFiles((err, genres) => {
-        if (err) res.status(259).send({msg: 'Files Not found'});
+        if (err) res.status(258).send({msg: 'Files Not found'});
         else {
             return res.status(200).send(genres);
         }
@@ -46,7 +46,7 @@ exports.get_device_files = async function (req, res) {
     let deviceId = req.params.id;
     await getDeviceFiles(deviceId, (err, genres) => {
         if (err || !genres) {
-            res.status(259).send({msg: 'Files Not found'})
+            res.status(258).send({msg: 'Files Not found'})
         } else {
             res.status(200).send(genres);
         }
@@ -57,7 +57,7 @@ exports.get_file_byId = async function (req, res) {
     let deviceId = req.params.id;
     await getFileById(deviceId, (err, genres) => {
         if (err || !genres) {
-            res.status(259).send({msg: 'Files Not found'})
+            res.status(258).send({msg: 'Files Not found'})
         } else {
             res.download(genres.path);
         }

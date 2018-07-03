@@ -9,7 +9,7 @@ exports.saveDevice = async function (req, res) {
     newDevice.save(function (err) {
         if (err) {
             console.log(err);
-            return res.status(400).send({success: false, msg: 'Save Device failed. Device ID Already exists'});
+            return res.status(258).send({success: false, msg: 'Save Device failed. Device ID Already exists'});
         }
         res.status(201).send({success: true, msg: 'Successful created new Device.'});
     });
@@ -22,7 +22,7 @@ exports.getDevices = async function (req, res) {
         Device.find({}, function (err, devices) {
             if (err) throw err;
             else if (!devices) {
-                res.status(400).send({msg: "No Devices found"})
+                res.status(258).send({msg: "No Devices found"})
             }
             else res.status(200).send(devices);
         });
@@ -71,7 +71,7 @@ exports.deleteDevice = async function (req, res) {
         Device.findByIdAndRemove(req.params.deviceId, function (err, devic) {
             if (err) throw err;
             if (!device) {
-                res.status(400).send({message: "Device not found"})
+                res.status(258).send({message: "Device not found"})
             }
             else res.status(200).send({success: true, msg: 'Success'});
         });
