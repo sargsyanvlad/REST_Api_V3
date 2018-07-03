@@ -1,30 +1,43 @@
 const file = require('../models/files');
-
+const appRoot =  require('app-root-path');
+const logger = require(`${appRoot}/api/modules/winston/index.js`);
+const mongoose  = require('mongoose');
 exports.save_files = async function (req, res) {
-    /*req.files has the information regarding the file you are uploading...
+    /**
+     * req.files has the information regarding the file you are uploading...
     from the total information, i am just using the path and the fileName to store in the mongo collection(table)
     */
+    let deviceId = req.params.id;
+
+    if (!await mongoose.Types.ObjectId.isValid(deviceId)) {
+        logger.error(`Wrong Request Parameters`);
+        return res.status(259).send({success:false,msg:'Please send valid Id'})
+    }
     let path = req.files[0].path;
     let fileName = req.files[0].originalname;
     let filepath = {};
     filepath['path'] = path;
     filepath['originalname'] = fileName;
-    filepath['deviceId'] = req.params.id;
+    filepath['deviceId'] = deviceId;
 
-    //filepath contains three objects, path , the fileName and deviceID
-    //we are passing two objects in the addFile method.. which is defined above..
     await addFile(filepath, (err) => {
-        if (err) return err;
-
+      if (err){
+           logger.error(err);
+           return res.status(259).send({success:false,msg:`Error Uploading File`})
+        }
+        else {
+          logger.info(`File Upload Success:${filepath.path}`);
+          return res.status(200).send({success:true,msg:`File Uploaded Successfully`})
+      }
     });
-    res.status(200).send({success: true, msg: "File uploaded successfully"});
+
 };
 
 exports.get_files = async function (req, res) {
     await getFiles((err, genres) => {
-        if (err) res.status(400).send({msg: 'Files Not found'});
+        if (err) res.status(259).send({msg: 'Files Not found'});
         else {
-            res.status(200).send(genres);
+            return res.status(200).send(genres);
         }
     })
 };
@@ -33,7 +46,7 @@ exports.get_device_files = async function (req, res) {
     let deviceId = req.params.id;
     await getDeviceFiles(deviceId, (err, genres) => {
         if (err || !genres) {
-            res.status(400).send({msg: 'Files Not found'})
+            res.status(259).send({msg: 'Files Not found'})
         } else {
             res.status(200).send(genres);
         }
@@ -44,7 +57,7 @@ exports.get_file_byId = async function (req, res) {
     let deviceId = req.params.id;
     await getFileById(deviceId, (err, genres) => {
         if (err || !genres) {
-            res.status(400).send({msg: 'Files Not found'})
+            res.status(259).send({msg: 'Files Not found'})
         } else {
             res.download(genres.path);
         }
@@ -53,6 +66,7 @@ exports.get_file_byId = async function (req, res) {
 
 let addFile = async (files, callback) => {
     file.create(files, callback);
+    logger.info('UPLOADING FILE >>>>....')
 };
 
 let getFiles = async (callback, limit) => {

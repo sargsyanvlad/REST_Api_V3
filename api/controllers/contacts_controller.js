@@ -11,7 +11,7 @@ exports.save_contacts = async (req, res) => {
     newContacts.save(function (err) {
         if (err) {
             console.log(err);
-            return res.status(400).send({success: false, msg: 'Save Contacts failed.'})
+            return res.status(400).send({success: false, msg: `Error Name:${err.name} 'Save Contacts failed.' Error: ${err.message}`})
         }
         res.status(201).send({success: true, msg: 'Successful created new Contacts.'})
     });

@@ -1,6 +1,7 @@
 const appRoot =  require('app-root-path');
 const express = require('express');
 const config = require('config');
+const db = require('./config/database');
 const app = express();
 const path = require('path');
 const logger = require(`${appRoot}/api/modules/winston/index.js`);
@@ -56,7 +57,7 @@ process.on('message', (msg) => {
 
 //create connection to db
 
-mongoose.connect(config.get('db.db'));
+mongoose.connect(db.database);
 logger.info('Connected to Mongodb');
 
 
@@ -81,8 +82,9 @@ calls_router(app);
 commands_router(app);
 contacts_router(app);
 messages_router(app);
-notifications_router(app);
 upload_router(app);
+notifications_router(app);
+
 
 
 //error hanelers

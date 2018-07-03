@@ -1,5 +1,7 @@
 const jwt = require('jsonwebtoken');
-const config = require('config');
+const appRoot =  require('app-root-path');
+
+const config = require(`${appRoot}/config/database`);
 const User = require('../models/users');
 
 //authenticator path
@@ -11,7 +13,7 @@ exports.authenticate = async (req, res, next) => {
         next();
     }
 
-    let decoded = jwt.decode(token, config.get('jwt.secret'));
+    let decoded = jwt.decode(token, config.secret);
     User.findOne({username: decoded.username},
         function (err, user) {
             if (err) {

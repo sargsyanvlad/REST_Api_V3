@@ -1,6 +1,7 @@
 let JwtStrategy = require('passport-jwt').Strategy,
     ExtractJwt = require('passport-jwt').ExtractJwt;
-let config =  require('config');
+const appRoot =  require('app-root-path');
+let config =  require(`${appRoot}/config/database`);
 // load up the user model
 let User = require('../api/models/users');
 // let config = require('../config/database'); // get db config file
@@ -8,7 +9,7 @@ let User = require('../api/models/users');
 module.exports = function(passport) {
     let opts = {};
     opts.jwtFromRequest = ExtractJwt.fromAuthHeaderWithScheme('jwt');
-    opts.secretOrKey = config.get('jwt.secret');
+    opts.secretOrKey = config.secret;
     passport.use(new JwtStrategy(opts, function(jwt_payload, done) {
         User.findOne({id: jwt_payload.id}, function(err, user) {
             if (err) {

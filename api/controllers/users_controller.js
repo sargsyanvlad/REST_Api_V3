@@ -2,7 +2,8 @@
 // let router = express.Router();
 // let bodyParser = require('body-parser');
 // router.use(bodyParser.json());
-const config = require('config');
+const appRoot = require('app-root-path');
+const config = require(`${appRoot}/config/database`);
 const jwt = require('jsonwebtoken');
 const User = require('../models/users');
 // const secret = process.env.JWT_SECRET;
@@ -40,7 +41,7 @@ exports.signin = function (req, res) {
             user.comparePassword(req.body.password, function (err, isMatch) {
                 if (isMatch && !err) {
                     // if user is found and password is right create a token
-                    let token = jwt.sign({username: user.username}, config.get('jwt.secret'), {expiresIn: '1h'});
+                    let token = jwt.sign({username: user.username}, config.secret, {expiresIn: '1h'});
                     // return the information including token as JSON
                     res.status(200).send({success: true, token: 'JWT ' + token});
                 } else {

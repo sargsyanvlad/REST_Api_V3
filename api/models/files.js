@@ -23,7 +23,7 @@ let fileSchema = mongoose.Schema({
         type: Schema.Types.ObjectId,
         ref:  'Device',
         required:true,
-        unique: true,
+        unique: false,
     }
 });
 

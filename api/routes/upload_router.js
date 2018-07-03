@@ -1,6 +1,23 @@
-module.exports = function (app) {
+module.exports =  function (app) {
     const filesCtrl = require('../controllers/upload_controller');
     const multer = require('multer');
+    const fs = require('fs');
+
+    let stat = async function (dir) {
+        try {
+            fs.statSync(dir);
+        } catch (err) {
+            try {
+                fs.mkdirSync(dir);
+                console.log(`Directory ${dir} created Successfully`);
+            } catch (err) {
+                console.log(err);
+                return err;
+            }
+        }
+    };
+
+     stat('./files');
 
     let storage = multer.diskStorage({
         destination: (req, file, cb) => {
