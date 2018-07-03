@@ -30,7 +30,7 @@ exports.get_commands = async function (req, res) {
     let commands = await Commands.findOne({deviceId: id}).catch(err => err);
 
     if (!commands || commands.commands.length < 1) {
-        res.status(258).send({success: false, msg: 'Commands not found'})
+        return res.status(258).send({success: false, msg: 'Commands not found'})
     }
 
     res.status(200).send(commands.commands);
